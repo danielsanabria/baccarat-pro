@@ -186,7 +186,7 @@ const MobileExperience = () => {
     }, []);
 
     return (
-        <div className="bg-background relative">
+        <div className="relative">
             <div
               className="fixed top-0 left-0 w-full h-screen -z-10"
             >

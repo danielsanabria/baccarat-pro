@@ -151,7 +151,7 @@ export default function BaccaratProPage() {
       <div className={isMobile ? 'relative' : 'relative h-screen w-full overflow-hidden'}>
         <Image
           ref={backgroundRef}
-          src="https://freeimage.host/i/FsXRNup.jpg"
+          src="https://iili.io/FsXRNup.jpg"
           alt="Baccarat Table"
           width={2560}
           height={1440}

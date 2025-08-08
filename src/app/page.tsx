@@ -136,12 +136,13 @@ export default function BaccaratProPage() {
                 const time = timelineRef.current.labels[label];
                 if (typeof time !== 'undefined') {
                     const scrollPos = mainTimelineTrigger.start + (time / timelineRef.current.duration()) * (mainTimelineTrigger.end - mainTimelineTrigger.start);
+                    
                     gsap.to(window, {
                         scrollTo: {
-                            y: scrollPos,
+                            y: scrollPos + 1, // Add a 1px offset to ensure it lands correctly
                             autoKill: false
                         },
-                        duration: 1.5, // A bit more time to scroll
+                        duration: 1.5,
                         ease: 'power2.inOut'
                     });
                 }

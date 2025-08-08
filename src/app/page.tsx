@@ -121,16 +121,16 @@ export default function BaccaratProPage() {
         
         e.preventDefault();
         const label = href.substring(1);
+        const element = document.getElementById(label);
 
         if (isMobile) {
-            const element = document.getElementById(label);
             if (element) {
                 gsap.to(window, { duration: 1, scrollTo: { y: element, autoKill: false, offsetY: 20 }, ease: 'power2.inOut' });
             }
             return;
         }
 
-        if (timelineRef.current) {
+        if (timelineRef.current && element) {
             const mainTimelineTrigger = ScrollTrigger.getById('main-timeline');
             if (mainTimelineTrigger) {
                 const time = timelineRef.current.labels[label];
@@ -139,8 +139,9 @@ export default function BaccaratProPage() {
                     
                     gsap.to(window, {
                         scrollTo: {
-                            y: scrollPos + 1, // Add a 1px offset to ensure it lands correctly
-                            autoKill: false
+                            y: scrollPos, 
+                            autoKill: false,
+                            offsetY: 20
                         },
                         duration: 1.5,
                         ease: 'power2.inOut'

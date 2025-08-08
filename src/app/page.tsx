@@ -81,7 +81,7 @@ export default function BaccaratProPage() {
       <div className="relative h-screen w-full overflow-hidden">
         <Image
           ref={backgroundRef}
-          src="https://placehold.co/2560x1440.png"
+          src="https://iili.io/FsW4sfI.jpg"
           alt="Baccarat Table"
           width={2560}
           height={1440}

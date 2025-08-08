@@ -1,10 +1,16 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MoveRight } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 export const CtaSection = () => {
+    const isMobile = useIsMobile();
+    const sectionClasses = isMobile
+        ? "relative flex flex-col items-center justify-center text-center p-16 bg-background"
+        : "cta-section absolute inset-0 flex flex-col items-center justify-center opacity-0 text-center";
+
     return (
-        <section id="cta" className="cta-section absolute inset-0 flex flex-col items-center justify-center opacity-0 text-center">
+        <section id="cta" className={sectionClasses}>
             <div className="absolute inset-0 bg-vignette" />
             <div className="relative">
               <h2 className="font-headline text-5xl md:text-7xl font-bold text-white" style={{ textShadow: '0 0 20px hsl(var(--primary) / 0.7)' }}>Ready to Start Winning?</h2>

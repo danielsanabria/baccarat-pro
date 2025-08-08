@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const VideoTrigger = ({ title, videoUrl }: { title: string, videoUrl: string }) => (
   <Dialog>
@@ -29,8 +30,13 @@ const VideoTrigger = ({ title, videoUrl }: { title: string, videoUrl: string }) 
 
 
 export const VideoSection = () => {
+    const isMobile = useIsMobile();
+    const sectionClasses = isMobile
+      ? "relative flex flex-col items-center justify-center py-16 bg-background"
+      : "video-section absolute inset-0 flex flex-col items-center justify-center opacity-0";
+
     return (
-        <section id="videos" className="video-section absolute inset-0 flex flex-col items-center justify-center opacity-0">
+        <section id="videos" className={sectionClasses}>
             <h2 className="font-headline text-4xl md:text-5xl text-white mb-8 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Regional Masterclasses</h2>
             <div className="flex flex-col md:flex-row gap-8">
               <VideoTrigger title="Strategies for Spain" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" />

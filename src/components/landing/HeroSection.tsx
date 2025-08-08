@@ -1,4 +1,6 @@
 import React from 'react';
+import { useIsMobile } from '@/hooks/use-mobile';
+
 
 const CardSVG = ({ className, label }: { className?: string; label: string }) => (
   <div className={className}>
@@ -12,8 +14,13 @@ const CardSVG = ({ className, label }: { className?: string; label: string }) =>
 );
 
 export const HeroSection = () => {
+  const isMobile = useIsMobile();
+  const sectionClasses = isMobile
+    ? 'relative flex h-screen flex-col items-center justify-center text-center text-white p-4 bg-background'
+    : 'hero-section absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4';
+  
   return (
-    <section id="hero" className="hero-section absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
+    <section id="hero" className={sectionClasses}>
       <div className="hero-text">
         <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold" style={{ textShadow: '0 0 15px hsl(var(--primary) / 0.7)' }}>
           Master the Art of Baccarat.

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const testimonials = [
   { name: 'Alex Johnson', quote: 'The strategies are a game-changer. My win rate has improved dramatically.' },
@@ -8,8 +9,13 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
+    const isMobile = useIsMobile();
+    const sectionClasses = isMobile
+        ? "relative flex flex-col items-center justify-center p-8 bg-background"
+        : "testimonials-section absolute inset-0 flex flex-col items-center justify-center opacity-0 p-8";
+
     return (
-        <section id="testimonials" className="testimonials-section absolute inset-0 flex flex-col items-center justify-center opacity-0 p-8">
+        <section id="testimonials" className={sectionClasses}>
             <h2 className="font-headline text-4xl md:text-5xl text-white mb-12 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>What Players Are Saying</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
             {testimonials.map((t, i) => (

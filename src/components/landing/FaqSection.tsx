@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const faqItems = [
     { question: 'Is Baccarat a game of luck or skill?', answer: 'Baccarat is primarily a game of chance, but understanding betting strategies, bankroll management, and the third card rule can significantly improve your odds and long-term results.' },
@@ -11,8 +12,13 @@ const faqItems = [
   
 
 export const FaqSection = () => {
+    const isMobile = useIsMobile();
+    const sectionClasses = isMobile
+        ? "relative flex flex-col items-center justify-center p-8 bg-background"
+        : "faq-section absolute inset-0 flex flex-col items-center justify-center opacity-0 p-8";
+
     return (
-        <section id="faq" className="faq-section absolute inset-0 flex flex-col items-center justify-center opacity-0 p-8">
+        <section id="faq" className={sectionClasses}>
             <div className="w-full max-w-3xl">
               <h2 className="font-headline text-4xl md:text-5xl text-white text-center mb-8" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Frequently Asked Questions</h2>
               <Accordion type="single" collapsible className="w-full bg-card/60 backdrop-blur-sm rounded-lg border border-primary/30 p-2 md:p-4">

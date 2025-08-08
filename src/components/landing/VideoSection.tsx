@@ -9,7 +9,7 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
     <div className="flex flex-col items-center gap-4">
         <Dialog>
             <DialogTrigger asChild>
-            <button className="group relative w-48 h-64 rounded-lg overflow-hidden border-2 border-primary/50 hover:border-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+            <button className="group relative w-64 h-80 rounded-lg overflow-hidden border-2 border-primary/50 hover:border-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <p className="absolute bottom-4 left-4 font-headline text-xl text-white">{title}</p>
@@ -44,8 +44,8 @@ export const VideoSection = () => {
 
     return (
         <section id="videos" className={sectionClasses}>
-            <h2 className="font-headline text-4xl md:text-5xl text-white mb-8 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Masterclasses Regionales</h2>
-            <div className="flex flex-col md:flex-row gap-8">
+            <h2 className="font-headline text-4xl md:text-5xl text-white mb-12 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Masterclasses Regionales</h2>
+            <div className="flex flex-col md:flex-row gap-8 md:gap-16">
               <VideoTrigger title="Estrategias para España" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
               <VideoTrigger title="Estrategias para LATAM" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
             </div>

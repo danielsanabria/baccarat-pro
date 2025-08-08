@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Menu } from 'lucide-react';
 
 export const BottomNav = () => {
@@ -36,6 +36,9 @@ export const BottomNav = () => {
                             </Button>
                         </SheetTrigger>
                         <SheetContent side="bottom" className="bg-background/90 backdrop-blur-lg border-t-primary/20 text-white">
+                           <SheetHeader>
+                             <SheetTitle className="sr-only">Main Menu</SheetTitle>
+                           </SheetHeader>
                            <div className="flex flex-col items-center justify-center h-full gap-4 pt-8">
                                 {navItems.map(item => (
                                     <SheetClose asChild key={item.label}>

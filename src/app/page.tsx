@@ -29,7 +29,7 @@ const DesktopExperience = () => {
                 scrollTrigger: {
                     trigger: mainRef.current,
                     start: 'top top',
-                    end: `+=${sections.length * 1000}`,
+                    end: `+=${(sections.length + 1) * 1000}`, // Adjusted end
                     scrub: 1.5,
                     pin: true,
                     id: 'main-timeline'
@@ -40,11 +40,16 @@ const DesktopExperience = () => {
             tl.to('.hero-section', { scale: 0.8, opacity: 0.5, duration: 1});
 
             sections.forEach((section, index) => {
-              const label = (section as HTMLElement).id;
+              const el = section as HTMLElement;
+              const label = el.id;
               tl.addLabel(label, index + 1);
-              tl.fromTo(section, { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 0.5 });
+
+              if (el.style.opacity === "0") {
+                  tl.fromTo(el, { y: 100 }, { opacity: 1, y: 0, duration: 0.5 });
+              }
+              
               if (index < sections.length -1) {
-                tl.to(section, { opacity: 0, y: -100, duration: 0.5}, '+=0.5');
+                tl.to(el, { opacity: 0, y: -100, duration: 0.5}, '+=1');
               }
             })
 
@@ -101,18 +106,14 @@ const DesktopExperience = () => {
     }, []);
 
     return (
-        <div ref={mainRef} className="bg-background">
+        <div ref={mainRef}>
             <div className='relative h-screen w-full overflow-hidden'>
-                <div className="absolute inset-0">
-                    <HeroSection />
-                </div>
-                <div className='absolute inset-0'>
-                    <StrategySection />
-                    <VideoSection />
-                    <TestimonialsSection />
-                    <FaqSection />
-                    <CtaSection />
-                </div>
+                <HeroSection />
+                <StrategySection />
+                <VideoSection />
+                <TestimonialsSection />
+                <FaqSection />
+                <CtaSection />
             </div>
             <BottomNav />
         </div>

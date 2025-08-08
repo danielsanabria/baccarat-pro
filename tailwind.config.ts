@@ -8,11 +8,21 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        headline: ['Playfair Display', 'serif'],
         code: ['monospace'],
+      },
+      backgroundImage: {
+        'vignette': 'radial-gradient(circle, transparent 60%, hsl(var(--background)))',
       },
       colors: {
         background: 'hsl(var(--background))',

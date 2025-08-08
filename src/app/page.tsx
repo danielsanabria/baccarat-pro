@@ -125,20 +125,21 @@ export default function BaccaratProPage() {
         if (isMobile) {
             const element = document.getElementById(label);
             if (element) {
-                gsap.to(window, { scrollTo: { y: element.offsetTop, autoKill: false }, duration: 1, ease: 'power2.inOut' });
+                gsap.to(window, { duration: 1, scrollTo: { y: element, autoKill: false, offsetY: 20 }, ease: 'power2.inOut' });
             }
             return;
         }
 
         if (timelineRef.current) {
             const time = timelineRef.current.labels[label];
-            
             if (typeof time !== 'undefined') {
-                const scrollTrigger = ScrollTrigger.getById('main-timeline');
-                if (scrollTrigger) {
-                    const scrollPosition = scrollTrigger.start + (time / timelineRef.current.duration()) * (scrollTrigger.end - scrollTrigger.start);
-                    gsap.to(window, { scrollTo: { y: scrollPosition, autoKill: true }, duration: 1.5, ease: 'power2.inOut' });
-                }
+                 gsap.to(window, {
+                    scrollTo: {
+                        y: time,
+                        autoKill: false
+                    },
+                    duration: 1
+                });
             }
         }
     };

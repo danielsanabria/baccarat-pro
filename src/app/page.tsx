@@ -166,10 +166,9 @@ export default function BaccaratProPage() {
           priority
           data-ai-hint="baccarat table cards"
           className="absolute top-0 left-0 w-full h-full object-cover origin-center"
-          style={{ display: isMobile ? 'none' : 'block' }}
         />
 
-        <div className="absolute inset-0 bg-black/30" style={{ display: isMobile ? 'none' : 'block' }} />
+        <div className="absolute inset-0 bg-black/30" />
 
         <div className={isMobile ? 'relative flex flex-col' : 'absolute inset-0'}>
           <HeroSection />

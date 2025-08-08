@@ -1,7 +1,7 @@
+
 "use client"
 import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const faqItems = [
     { question: '¿El Baccarat es un juego de suerte o de habilidad?', answer: 'El Baccarat es principalmente un juego de azar, pero entender las estrategias de apuesta, la gestión del bankroll y la regla de la tercera carta puede mejorar significativamente tus probabilidades y resultados a largo plazo.' },
@@ -12,10 +12,7 @@ const faqItems = [
   
 
 export const FaqSection = () => {
-    const isMobile = useIsMobile();
-    const sectionClasses = isMobile
-        ? "relative flex flex-col items-center justify-center p-8 bg-background"
-        : "faq-section absolute inset-0 flex flex-col items-center justify-center opacity-0 p-8";
+    const sectionClasses = "relative flex flex-col items-center justify-center p-8 bg-background";
 
     return (
         <section id="faq" className={sectionClasses}>

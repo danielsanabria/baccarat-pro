@@ -1,18 +1,15 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const testimonials = [
-  { name: 'Alex Johnson', quote: 'Las estrategias son un antes y un después. Mi tasa de victorias ha mejorado drásticamente.' },
+  { name: 'Álex Johnson', quote: 'Las estrategias son un antes y un después. Mi tasa de victorias ha mejorado drásticamente.' },
   { name: 'Samantha Lee', quote: '¡Finalmente entiendo los matices del juego. Muy recomendable!' },
-  { name: 'Michael Chen', quote: 'Baccarat Pro me dio la confianza que necesitaba en la mesa. Imprescindible.' },
+  { name: 'Miguel Chen', quote: 'Baccarat Pro me dio la confianza que necesitaba en la mesa. Imprescindible.' },
 ];
 
 export const TestimonialsSection = () => {
-    const isMobile = useIsMobile();
-    const sectionClasses = isMobile
-        ? "relative flex flex-col items-center justify-center p-8 bg-background"
-        : "testimonials-section absolute inset-0 flex flex-col items-center justify-center opacity-0 p-8";
+    const sectionClasses = "relative flex flex-col items-center justify-center p-8 bg-background";
 
     return (
         <section id="testimonials" className={sectionClasses}>

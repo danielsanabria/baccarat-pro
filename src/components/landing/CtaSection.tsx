@@ -1,13 +1,10 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MoveRight } from 'lucide-react';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 export const CtaSection = () => {
-    const isMobile = useIsMobile();
-    const sectionClasses = isMobile
-        ? "relative flex flex-col items-center justify-center text-center p-16 min-h-[60vh]"
-        : "cta-section absolute inset-0 flex flex-col items-center justify-center opacity-0 text-center";
+    const sectionClasses = "relative flex flex-col items-center justify-center text-center p-16 min-h-[60vh]";
 
     return (
         <section id="cta" className={sectionClasses}>

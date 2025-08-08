@@ -1,21 +1,18 @@
+
 import React from 'react';
-import { useIsMobile } from '@/hooks/use-mobile';
 import { Button } from '@/components/ui/button';
 import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
 
 export const HeroSection = () => {
-  const isMobile = useIsMobile();
-  const sectionClasses = isMobile
-    ? 'relative flex h-screen flex-col items-center justify-center text-center text-white p-4'
-    : 'hero-section absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4';
+  const sectionClasses = 'relative flex h-screen flex-col items-center justify-center text-center text-white p-4';
   
   return (
     <section id="hero" className={sectionClasses}>
       <div className="absolute inset-0 z-0">
         <Image
           src="https://iili.io/FsXRNup.jpg"
-          alt="Baccarat Table with cards"
+          alt="Mesa de Baccarat con cartas"
           layout="fill"
           objectFit="cover"
           priority

@@ -1,8 +1,8 @@
+
 "use client";
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import { useIsMobile } from '@/hooks/use-mobile';
 import { MoveRight } from 'lucide-react';
 
 const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, videoUrl: string, registrationLink: string }) => (
@@ -20,7 +20,7 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
             <iframe 
                 width="100%" 
                 height="100%" 
-                src={`${videoUrl}&autoplay=1`} 
+                src={`${videoUrl}?autoplay=1`} 
                 title="Reproductor de video de YouTube" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -40,10 +40,7 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
 
 
 export const VideoSection = () => {
-    const isMobile = useIsMobile();
-    const sectionClasses = isMobile
-      ? "relative flex flex-col items-center justify-center py-16 bg-background"
-      : "video-section absolute inset-0 flex flex-col items-center justify-center opacity-0";
+    const sectionClasses = "relative flex flex-col items-center justify-center py-16 bg-background";
 
     return (
         <section id="videos" className={sectionClasses}>

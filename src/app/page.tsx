@@ -104,7 +104,7 @@ export default function BaccaratProPage() {
             const scrollTrigger = ScrollTrigger.getById('main-timeline');
             if (scrollTrigger) {
                 const scrollPosition = scrollTrigger.start + (time / timelineRef.current.duration()) * (scrollTrigger.end - scrollTrigger.start);
-                gsap.to(window, { scrollTo: scrollPosition, duration: 1.5, ease: 'power2.inOut', autoKill: false });
+                gsap.to(window, { scrollTo: { y: scrollPosition, autoKill: false }, duration: 1.5, ease: 'power2.inOut' });
             }
         }
     };
@@ -117,7 +117,7 @@ export default function BaccaratProPage() {
       <div className="relative h-screen w-full overflow-hidden">
         <Image
           ref={backgroundRef}
-          src="https://freeimage.host/i/FsW4sfI.jpg"
+          src="https://placehold.co/2560x1440.png"
           alt="Baccarat Table"
           width={2560}
           height={1440}

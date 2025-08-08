@@ -51,7 +51,7 @@ export default function BaccaratProPage() {
         scrollTrigger: {
           trigger: mainRef.current,
           start: 'top top',
-          end: '+=30000',
+          end: '+=40000', // Increased end time
           scrub: 1.5,
           pin: true,
           id: 'main-timeline'
@@ -61,50 +61,50 @@ export default function BaccaratProPage() {
 
       // 1. Hero: Initial state
       tl.addLabel('hero', 0);
-      tl.to(backgroundRef.current, { scale: 1.2, duration: 4 }, 0);
-      tl.fromTo('.hero-card', { y: 100, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.2, duration: 2 }, 1);
-      tl.fromTo('.hero-text', { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2 }, 1);
+      tl.to(backgroundRef.current, { scale: 1.2, duration: 8 }, 0); // Slower zoom
+      tl.fromTo('.hero-card', { y: 100, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.2, duration: 4 }, 1);
+      tl.fromTo('.hero-text', { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 4 }, 1);
 
       // 2. Strategy Section
-      tl.addLabel('strategy', 12);
-      tl.to('.hero-section', { opacity: 0, duration: 2 }, 'strategy-=2');
-      tl.to(backgroundRef.current, { x: '-15%', y: '-10%', scale: 1.8, duration: 8 }, 'strategy');
-      tl.fromTo('.strategy-1', { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 4 }, 'strategy+=2');
+      tl.addLabel('strategy', 20); // Longer duration
+      tl.to('.hero-section', { opacity: 0, duration: 4 }, 'strategy-=4');
+      tl.to(backgroundRef.current, { x: '-15%', y: '-10%', scale: 1.8, duration: 12 }, 'strategy');
+      tl.fromTo('.strategy-1', { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 6 }, 'strategy+=3');
       
-      tl.addLabel('strategy-2', 24);
-      tl.to('.strategy-1', { opacity: 0, x: -100, duration: 2 }, 'strategy-2-=2');
-      tl.to(backgroundRef.current, { x: '0%', y: '15%', scale: 2, duration: 8 }, 'strategy-2');
-      tl.fromTo('.strategy-2', { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 4 }, 'strategy-2+=2');
+      tl.addLabel('strategy-2', 40); // Longer duration
+      tl.to('.strategy-1', { opacity: 0, x: -100, duration: 4 }, 'strategy-2-=4');
+      tl.to(backgroundRef.current, { x: '0%', y: '15%', scale: 2, duration: 12 }, 'strategy-2');
+      tl.fromTo('.strategy-2', { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 6 }, 'strategy-2+=3');
       
-      tl.addLabel('strategy-3', 36);
-      tl.to('.strategy-2', { opacity: 0, x: 100, duration: 2 }, 'strategy-3-=2');
-      tl.to(backgroundRef.current, { x: '10%', y: '-5%', scale: 2.2, duration: 8 }, 'strategy-3');
-      tl.fromTo('.strategy-3', { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 4 }, 'strategy-3+=2');
+      tl.addLabel('strategy-3', 60); // Longer duration
+      tl.to('.strategy-2', { opacity: 0, x: 100, duration: 4 }, 'strategy-3-=4');
+      tl.to(backgroundRef.current, { x: '10%', y: '-5%', scale: 2.2, duration: 12 }, 'strategy-3');
+      tl.fromTo('.strategy-3', { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 6 }, 'strategy-3+=3');
       
       // 3. Video Section
-      tl.addLabel('videos', 48);
-      tl.to('.strategy-3', { opacity: 0, duration: 2 }, 'videos-=2');
-      tl.to(backgroundRef.current, { x: '0%', y: '0%', scale: 1.3, duration: 8 }, 'videos');
-      tl.fromTo('.video-section', { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 4 }, 'videos+=2');
+      tl.addLabel('videos', 80); // Longer duration
+      tl.to('.strategy-3', { opacity: 0, duration: 4 }, 'videos-=4');
+      tl.to(backgroundRef.current, { x: '0%', y: '0%', scale: 1.3, duration: 12 }, 'videos');
+      tl.fromTo('.video-section', { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 6 }, 'videos+=3');
 
       // 4. Testimonials Section
-      tl.addLabel('testimonials', 60);
-      tl.to('.video-section', { opacity: 0, duration: 2 }, 'testimonials-=2');
-      tl.to(backgroundRef.current, { x: '25%', y: '10%', scale: 1.6, duration: 8 }, 'testimonials');
-      tl.fromTo('.testimonials-section', { opacity: 0 }, { opacity: 1, duration: 4 }, 'testimonials+=2');
-      tl.fromTo('.testimonial-chip', { x: -100, opacity: 0 }, { x: 0, opacity: 1, stagger: 0.8, duration: 3.2 }, 'testimonials+=2.8');
+      tl.addLabel('testimonials', 100); // Longer duration
+      tl.to('.video-section', { opacity: 0, duration: 4 }, 'testimonials-=4');
+      tl.to(backgroundRef.current, { x: '25%', y: '10%', scale: 1.6, duration: 12 }, 'testimonials');
+      tl.fromTo('.testimonials-section', { opacity: 0 }, { opacity: 1, duration: 6 }, 'testimonials+=3');
+      tl.fromTo('.testimonial-chip', { x: -100, opacity: 0 }, { x: 0, opacity: 1, stagger: 1, duration: 4 }, 'testimonials+=4');
 
       // 5. FAQ Section
-      tl.addLabel('faq', 72);
-      tl.to('.testimonials-section', { opacity: 0, duration: 2 }, 'faq-=2');
-      tl.to(backgroundRef.current, { x: '-20%', y: '-15%', scale: 1.5, duration: 8 }, 'faq');
-      tl.fromTo('.faq-section', { opacity: 0 }, { opacity: 1, duration: 4 }, 'faq+=2');
+      tl.addLabel('faq', 120); // Longer duration
+      tl.to('.testimonials-section', { opacity: 0, duration: 4 }, 'faq-=4');
+      tl.to(backgroundRef.current, { x: '-20%', y: '-15%', scale: 1.5, duration: 12 }, 'faq');
+      tl.fromTo('.faq-section', { opacity: 0 }, { opacity: 1, duration: 6 }, 'faq+=3');
 
       // 6. CTA Section
-      tl.addLabel('cta', 84);
-      tl.to('.faq-section', { opacity: 0, duration: 2 }, 'cta-=2');
-      tl.to(backgroundRef.current, { scale: 1, x: '0%', y: '0%', duration: 8 }, 'cta');
-      tl.fromTo('.cta-section', { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 4 }, 'cta+=2');
+      tl.addLabel('cta', 140); // Longer duration
+      tl.to('.faq-section', { opacity: 0, duration: 4 }, 'cta-=4');
+      tl.to(backgroundRef.current, { scale: 1, x: '0%', y: '0%', duration: 12 }, 'cta');
+      tl.fromTo('.cta-section', { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 6 }, 'cta+=3');
 
     }, mainRef);
     return () => ctx.revert();
@@ -131,15 +131,20 @@ export default function BaccaratProPage() {
         }
 
         if (timelineRef.current) {
-            const time = timelineRef.current.labels[label];
-            if (typeof time !== 'undefined') {
-                 gsap.to(window, {
-                    scrollTo: {
-                        y: time,
-                        autoKill: false
-                    },
-                    duration: 1
-                });
+            const mainTimelineTrigger = ScrollTrigger.getById('main-timeline');
+            if (mainTimelineTrigger) {
+                const time = timelineRef.current.labels[label];
+                if (typeof time !== 'undefined') {
+                    const scrollPos = mainTimelineTrigger.start + (time / timelineRef.current.duration()) * (mainTimelineTrigger.end - mainTimelineTrigger.start);
+                    gsap.to(window, {
+                        scrollTo: {
+                            y: scrollPos,
+                            autoKill: false
+                        },
+                        duration: 1.5, // A bit more time to scroll
+                        ease: 'power2.inOut'
+                    });
+                }
             }
         }
     };

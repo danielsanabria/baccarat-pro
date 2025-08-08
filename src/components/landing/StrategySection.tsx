@@ -40,9 +40,9 @@ export const StrategySection = () => {
     if (isMobile) {
         return (
             <section id="strategy" className="relative flex flex-col items-center justify-center py-16 px-8 bg-background">
-                <MobileStrategyCard className="strategy-1" title="The Key Bets" description="Focus on Player and Banker bets. Our system reveals the statistical advantages and helps you make informed decisions." icon="Player & Banker" />
-                <MobileStrategyCard className="strategy-2" title="Third Card Rule" description="Demystify the game's most complex rule. Learn to anticipate the draw and adjust your strategy accordingly." icon="Third Card" />
-                <MobileStrategyCard className="strategy-3" title="Side Bets & Risk" description="Understand the high-risk, high-reward nature of Tie and Pair bets. We teach you when to take calculated risks." icon="Tie & Pair" />
+                <MobileStrategyCard title="Apuestas Clave" description="Concéntrate en las apuestas al Jugador y al Banquero. Nuestro sistema revela las ventajas estadísticas y te ayuda a tomar decisiones informadas." icon="Jugador & Banquero" />
+                <MobileStrategyCard title="Regla de la Tercera Carta" description="Desmitifica la regla más compleja del juego. Aprende a anticipar el robo de carta y ajusta tu estrategia." icon="Tercera Carta" />
+                <MobileStrategyCard title="Apuestas Laterales" description="Comprende el alto riesgo y la alta recompensa de las apuestas a Empate (Tie) y Pares (Pair). Te enseñamos cuándo tomar riesgos calculados." icon="Empate & Pares" />
             </section>
         )
     }
@@ -50,13 +50,13 @@ export const StrategySection = () => {
     return (
         <section id="strategy" className="absolute inset-0">
             <div className="absolute inset-0 flex items-center justify-start p-8 md:p-16">
-              <StrategyCard className="strategy-1" title="The Key Bets" description="Focus on Player and Banker bets. Our system reveals the statistical advantages and helps you make informed decisions." icon="Player & Banker" />
+              <StrategyCard className="strategy-1" title="Apuestas Clave" description="Concéntrate en las apuestas al Jugador y al Banquero. Nuestro sistema revela las ventajas estadísticas y te ayuda a tomar decisiones informadas." icon="Jugador & Banquero" />
             </div>
             <div className="absolute inset-0 flex items-center justify-end p-8 md:p-16">
-              <StrategyCard className="strategy-2" title="Third Card Rule" description="Demystify the game's most complex rule. Learn to anticipate the draw and adjust your strategy accordingly." icon="Third Card" />
+              <StrategyCard className="strategy-2" title="Regla de la Tercera Carta" description="Desmitifica la regla más compleja del juego. Aprende a anticipar el robo de carta y ajusta tu estrategia." icon="Tercera Carta" />
             </div>
             <div className="absolute inset-0 flex items-center justify-center p-8 md:p-16">
-               <StrategyCard className="strategy-3" title="Side Bets & Risk" description="Understand the high-risk, high-reward nature of Tie and Pair bets. We teach you when to take calculated risks." icon="Tie & Pair" />
+               <StrategyCard className="strategy-3" title="Apuestas Laterales" description="Comprende el alto riesgo y la alta recompensa de las apuestas a Empate (Tie) y Pares (Pair). Te enseñamos cuándo tomar riesgos calculados." icon="Empate & Pares" />
             </div>
         </section>
     );

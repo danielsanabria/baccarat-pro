@@ -3,9 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const testimonials = [
-  { name: 'Alex Johnson', quote: 'The strategies are a game-changer. My win rate has improved dramatically.' },
-  { name: 'Samantha Lee', quote: 'I finally understand the nuances of the game. Highly recommended!' },
-  { name: 'Michael Chen', quote: 'Baccarat Pro gave me the confidence I needed at the table. A must-have.' },
+  { name: 'Alex Johnson', quote: 'Las estrategias son un antes y un después. Mi tasa de victorias ha mejorado drásticamente.' },
+  { name: 'Samantha Lee', quote: '¡Finalmente entiendo los matices del juego. Muy recomendable!' },
+  { name: 'Michael Chen', quote: 'Baccarat Pro me dio la confianza que necesitaba en la mesa. Imprescindible.' },
 ];
 
 export const TestimonialsSection = () => {
@@ -16,7 +16,7 @@ export const TestimonialsSection = () => {
 
     return (
         <section id="testimonials" className={sectionClasses}>
-            <h2 className="font-headline text-4xl md:text-5xl text-white mb-12 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>What Players Are Saying</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white mb-12 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Lo que dicen los jugadores</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
             {testimonials.map((t, i) => (
                 <div key={i} className="testimonial-chip group relative cursor-pointer transition-transform duration-300 hover:-translate-y-2">

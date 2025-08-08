@@ -21,7 +21,7 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
                 width="100%" 
                 height="100%" 
                 src={`${videoUrl}&autoplay=1`} 
-                title="YouTube video player" 
+                title="Reproductor de video de YouTube" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerPolicy="strict-origin-when-cross-domain" 
@@ -47,10 +47,10 @@ export const VideoSection = () => {
 
     return (
         <section id="videos" className={sectionClasses}>
-            <h2 className="font-headline text-4xl md:text-5xl text-white mb-8 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Regional Masterclasses</h2>
+            <h2 className="font-headline text-4xl md:text-5xl text-white mb-8 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Masterclasses Regionales</h2>
             <div className="flex flex-col md:flex-row gap-8">
-              <VideoTrigger title="Strategies for Spain" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
-              <VideoTrigger title="Strategies for LATAM" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
+              <VideoTrigger title="Estrategias para España" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
+              <VideoTrigger title="Estrategias para LATAM" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
             </div>
         </section>
     );

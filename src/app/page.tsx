@@ -5,6 +5,7 @@ import React, { useRef, useLayoutEffect, useEffect } from 'react';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 import { HeroSection } from '@/components/landing/HeroSection';
 import { StrategySection } from '@/components/landing/StrategySection';
@@ -14,7 +15,7 @@ import { FaqSection } from '@/components/landing/FaqSection';
 import { CtaSection } from '@/components/landing/CtaSection';
 import { BottomNav } from '@/components/landing/BottomNav';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function BaccaratProPage() {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -27,7 +28,7 @@ export default function BaccaratProPage() {
         scrollTrigger: {
           trigger: mainRef.current,
           start: 'top top',
-          end: '+=20000',
+          end: '+=30000',
           scrub: 1.5,
           pin: true,
           id: 'main-timeline'
@@ -42,42 +43,42 @@ export default function BaccaratProPage() {
       tl.fromTo('.hero-text', { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2 }, 1);
 
       // 2. Strategy Section
-      tl.addLabel('strategy', 6);
+      tl.addLabel('strategy', 8);
       tl.to('.hero-section', { opacity: 0, duration: 1 }, 'strategy-=1');
       tl.to(backgroundRef.current, { x: '-15%', y: '-10%', scale: 1.8, duration: 4 }, 'strategy');
       tl.fromTo('.strategy-1', { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 2 }, 'strategy+=1');
       
-      tl.addLabel('strategy-2', 11);
+      tl.addLabel('strategy-2', 15);
       tl.to('.strategy-1', { opacity: 0, x: -100, duration: 1 }, 'strategy-2-=1');
       tl.to(backgroundRef.current, { x: '0%', y: '15%', scale: 2, duration: 4 }, 'strategy-2');
       tl.fromTo('.strategy-2', { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 2 }, 'strategy-2+=1');
       
-      tl.addLabel('strategy-3', 16);
+      tl.addLabel('strategy-3', 22);
       tl.to('.strategy-2', { opacity: 0, x: 100, duration: 1 }, 'strategy-3-=1');
       tl.to(backgroundRef.current, { x: '10%', y: '-5%', scale: 2.2, duration: 4 }, 'strategy-3');
       tl.fromTo('.strategy-3', { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 2 }, 'strategy-3+=1');
       
       // 3. Video Section
-      tl.addLabel('videos', 21);
+      tl.addLabel('videos', 29);
       tl.to('.strategy-3', { opacity: 0, duration: 1 }, 'videos-=1');
       tl.to(backgroundRef.current, { x: '0%', y: '0%', scale: 1.3, duration: 4 }, 'videos');
       tl.fromTo('.video-section', { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 2 }, 'videos+=1');
 
       // 4. Testimonials Section
-      tl.addLabel('testimonials', 26);
+      tl.addLabel('testimonials', 36);
       tl.to('.video-section', { opacity: 0, duration: 1 }, 'testimonials-=1');
       tl.to(backgroundRef.current, { x: '25%', y: '10%', scale: 1.6, duration: 4 }, 'testimonials');
       tl.fromTo('.testimonials-section', { opacity: 0 }, { opacity: 1, duration: 2 }, 'testimonials+=1');
       tl.fromTo('.testimonial-chip', { x: -100, opacity: 0 }, { x: 0, opacity: 1, stagger: 0.4, duration: 1.6 }, 'testimonials+=1.4');
 
       // 5. FAQ Section
-      tl.addLabel('faq', 31);
+      tl.addLabel('faq', 43);
       tl.to('.testimonials-section', { opacity: 0, duration: 1 }, 'faq-=1');
       tl.to(backgroundRef.current, { x: '-20%', y: '-15%', scale: 1.5, duration: 4 }, 'faq');
       tl.fromTo('.faq-section', { opacity: 0 }, { opacity: 1, duration: 2 }, 'faq+=1');
 
       // 6. CTA Section
-      tl.addLabel('cta', 36);
+      tl.addLabel('cta', 50);
       tl.to('.faq-section', { opacity: 0, duration: 1 }, 'cta-=1');
       tl.to(backgroundRef.current, { scale: 1, x: '0%', y: '0%', duration: 4 }, 'cta');
       tl.fromTo('.cta-section', { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 2 }, 'cta+=1');
@@ -103,7 +104,7 @@ export default function BaccaratProPage() {
             const scrollTrigger = ScrollTrigger.getById('main-timeline');
             if (scrollTrigger) {
                 const scrollPosition = scrollTrigger.start + (time / timelineRef.current.duration()) * (scrollTrigger.end - scrollTrigger.start);
-                gsap.to(window, { scrollTo: { y: scrollPosition, autoKill: false }, duration: 1.5, ease: 'power2.inOut' });
+                gsap.to(window, { scrollTo: scrollPosition, duration: 1.5, ease: 'power2.inOut', autoKill: false });
             }
         }
     };

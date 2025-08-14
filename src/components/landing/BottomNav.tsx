@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '../ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
@@ -8,7 +9,7 @@ export const BottomNav = () => {
     const isMobile = useIsMobile();
     const navItems = [
         { label: 'Estrategia', href: '#strategy' },
-        { label: 'Vídeos', href: '#videos' },
+        { label: 'Planes', href: '#plans' },
         { label: 'Testimonios', href: '#testimonials' },
         { label: 'Preguntas', href: '#faq' },
     ];

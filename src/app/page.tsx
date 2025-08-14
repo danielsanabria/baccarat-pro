@@ -13,6 +13,7 @@ import { FaqSection } from '@/components/landing/FaqSection';
 import { CtaSection } from '@/components/landing/CtaSection';
 import { BottomNav } from '@/components/landing/BottomNav';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { AffiliateSection } from '@/components/landing/AffiliateSection';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -39,11 +40,12 @@ const LandingPage = () => {
     }, []);
 
     return (
-        <div className="relative">
+        <div className="relative bg-background">
             <main>
                 <HeroSection />
                 <StrategySection />
                 <PricingSection />
+                <AffiliateSection />
                 <TestimonialsSection />
                 <FaqSection />
                 <CtaSection />

@@ -10,6 +10,7 @@ export const BottomNav = () => {
     const navItems = [
         { label: 'Estrategia', href: '#strategy' },
         { label: 'Planes', href: '#plans' },
+        { label: 'Bonos', href: '#affiliates' },
         { label: 'Testimonios', href: '#testimonials' },
         { label: 'Preguntas', href: '#faq' },
     ];
@@ -21,11 +22,39 @@ export const BottomNav = () => {
                     Baccarat Pro
                 </a>
                 
-                <div className="flex items-center gap-2">
-                     <a href="#cta">
-                        <Button className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors">Regístrate</Button>
-                    </a>
-                </div>
+                {isMobile ? (
+                    <Sheet>
+                        <SheetTrigger asChild>
+                            <Button variant="ghost" size="icon"><Menu /></Button>
+                        </SheetTrigger>
+                        <SheetContent side="bottom" className="bg-background/90 backdrop-blur-lg border-primary/30">
+                            <SheetHeader>
+                                <SheetTitle className="sr-only">Menú de Navegación</SheetTitle>
+                            </SheetHeader>
+                            <div className="flex flex-col items-center gap-4 pt-8">
+                                {navItems.map((item) => (
+                                    <SheetClose asChild key={item.href}>
+                                        <a href={item.href} className="text-xl font-headline text-white/80 hover:text-primary transition-colors">{item.label}</a>
+                                    </SheetClose>
+                                ))}
+                                <SheetClose asChild>
+                                    <a href="#cta" className="mt-4">
+                                        <Button className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors w-full">Regístrate</Button>
+                                    </a>
+                                </SheetClose>
+                            </div>
+                        </SheetContent>
+                    </Sheet>
+                ) : (
+                    <div className="flex items-center gap-6">
+                        {navItems.map((item) => (
+                           <a key={item.href} href={item.href} className="font-headline text-white/80 hover:text-primary transition-colors">{item.label}</a>
+                        ))}
+                         <a href="#cta">
+                            <Button className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors">Regístrate</Button>
+                        </a>
+                    </div>
+                )}
             </div>
         </nav>
     );

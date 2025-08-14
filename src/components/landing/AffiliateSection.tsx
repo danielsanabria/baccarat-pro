@@ -54,9 +54,9 @@ export const AffiliateSection = () => {
                 </p>
                 <div className="max-w-3xl mx-auto space-y-4">
                     {affiliatePartners.map((partner, index) => (
-                        <Card key={index} className="flex items-center justify-between p-4 bg-card/60 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-colors">
-                            <div className="flex items-center gap-4">
-                                <div className="w-28 h-12 relative flex items-center justify-center bg-white/10 rounded-md p-1">
+                        <Card key={index} className="flex flex-col sm:flex-row items-center justify-between p-4 bg-card/60 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-colors gap-4">
+                            <div className="flex items-center gap-4 w-full">
+                                <div className="w-28 h-12 relative flex items-center justify-center bg-white/10 rounded-md p-1 shrink-0">
                                     <Image 
                                         src={partner.logoUrl}
                                         alt={`${partner.name} logo`}
@@ -66,9 +66,9 @@ export const AffiliateSection = () => {
                                         data-ai-hint={partner.dataAiHint}
                                     />
                                 </div>
-                                <p className="text-white/90 text-left text-sm md:text-base">{partner.bonus}</p>
+                                <p className="text-white/90 text-left text-sm md:text-base flex-grow">{partner.bonus}</p>
                             </div>
-                            <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors shrink-0">
+                            <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors shrink-0 w-full sm:w-auto">
                                 <a href={partner.affiliateLink} target="_blank" rel="noopener noreferrer">
                                     Recibir
                                 </a>
@@ -80,4 +80,3 @@ export const AffiliateSection = () => {
         </section>
     );
 };
-

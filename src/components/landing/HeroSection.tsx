@@ -32,7 +32,7 @@ export const HeroSection = () => {
             <a href="https://t.me/your_channel_name" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary via-amber-500 to-primary text-primary-foreground hover:shadow-[0_0_25px_hsl(var(--primary)/0.6)] transition-all duration-300 scale-100 hover:scale-105">
                     Únete a Telegram
-                    <Send className="ml-2" />
+                    <Send />
                 </Button>
             </a>
         </div>

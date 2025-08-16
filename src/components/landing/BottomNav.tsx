@@ -19,8 +19,7 @@ export const BottomNav = () => {
                 
                 <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors">
                     <a href="https://t.me/your_channel_name" target="_blank" rel="noopener noreferrer">
-                        Únete a Telegram
-                        <Send />
+                        Telegram
                     </a>
                 </Button>
             </div>

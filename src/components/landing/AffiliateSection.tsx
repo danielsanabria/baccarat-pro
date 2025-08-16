@@ -10,7 +10,7 @@ const affiliatePartners = [
         logoUrl: 'https://placehold.co/100x40.png',
         bonus: 'Apuesta mínima 0,20 cent.',
         requirement: 'Requiere VPN',
-        affiliateLink: 'https://spinplatinum.com/',
+        affiliateLink: 'https://go.spaffiliates.co/visit/?bta=35324&nci=5354',
         dataAiHint: 'spin platinum logo'
     },
     {
@@ -18,7 +18,7 @@ const affiliatePartners = [
         logoUrl: 'https://placehold.co/100x40.png',
         bonus: 'Apuesta mínima 10€.',
         requirement: 'No requiere VPN',
-        affiliateLink: 'https://es1.playregal-snap.com/?affid=101369&subaff=b08f78301bc3ce49e774a5220fd06417&subaff1=&subaff2=&src=381b9474-f871-11ec-b939-0242ac120002',
+        affiliateLink: 'https://suitglue.com/api/v3/offer/4?affiliate_source=CAES4471&affiliate_id=101603&url_id=173&free_1=es&free_2=101603',
         dataAiHint: 'playregal logo'
     },
 ];

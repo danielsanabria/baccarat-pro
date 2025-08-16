@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
-import { Menu, MoveRight } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import Image from 'next/image';
 
@@ -17,20 +17,12 @@ export const BottomNav = () => {
                     <span>Hero Baccarat</span>
                 </a>
                 
-                {isMobile ? (
-                     <a href="#cta">
-                        <Button className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors">
-                            Regístrate
-                            <MoveRight className="ml-2" />
-                        </Button>
+                <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors">
+                    <a href="https://t.me/your_channel_name" target="_blank" rel="noopener noreferrer">
+                        Únete a Telegram
+                        <Send />
                     </a>
-                ) : (
-                    <div className="flex items-center gap-6">
-                         <a href="#cta">
-                            <Button className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors">Regístrate</Button>
-                        </a>
-                    </div>
-                )}
+                </Button>
             </div>
         </nav>
     );

@@ -82,7 +82,7 @@ export const PricingSection = () => {
                                 </ul>
                             </CardContent>
                             <CardFooter>
-                                <Button size="lg" className={`w-full font-bold ${plan.highlight ? 'bg-primary text-primary-foreground hover:bg-amber-500' : 'bg-secondary hover:bg-primary/80'}`}>
+                                <Button size="lg" className={`w-full font-bold ${plan.highlight ? 'bg-primary text-primary-foreground hover:bg-amber-500' : 'bg-accent text-accent-foreground hover:bg-primary/80'}`}>
                                     {plan.cta}
                                 </Button>
                             </CardFooter>

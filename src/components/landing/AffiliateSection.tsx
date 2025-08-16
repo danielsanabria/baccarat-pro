@@ -45,7 +45,10 @@ export const AffiliateSection = () => {
                                         data-ai-hint={partner.dataAiHint}
                                     />
                                 </div>
-                                <p className="text-white/90 text-left text-sm md:text-base flex-grow">{partner.bonus}</p>
+                                <div className="text-left flex-grow">
+                                    <p className="font-bold text-white/90">{partner.name}</p>
+                                    <p className="text-white/70 text-sm md:text-base">{partner.bonus}</p>
+                                </div>
                             </div>
                             <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors shrink-0 w-full sm:w-auto">
                                 <a href={partner.affiliateLink} target="_blank" rel="noopener noreferrer">

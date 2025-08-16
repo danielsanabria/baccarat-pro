@@ -6,39 +6,18 @@ import { Card } from '@/components/ui/card';
 
 const affiliatePartners = [
     {
-        name: 'Betfair',
-        logoUrl: 'https://iili.io/JADb0B7.png',
-        bonus: 'Bono 200€ apuestas gratis',
-        affiliateLink: '#',
-        dataAiHint: 'betfair logo'
+        name: 'Spin Platinum',
+        logoUrl: 'https://placehold.co/100x40.png',
+        bonus: 'Apuesta mínima 0,20 cent.',
+        affiliateLink: 'https://spinplatinum.com/',
+        dataAiHint: 'spin platinum logo'
     },
     {
-        name: 'Bet365',
-        logoUrl: 'https://iili.io/JADb3hb.png',
-        bonus: 'Bono 100€ en créditos',
-        affiliateLink: '#',
-        dataAiHint: 'bet365 logo'
-    },
-    {
-        name: 'Pokerstars Sports',
-        logoUrl: 'https://iili.io/JADblax.png',
-        bonus: 'Bono 100€ apuestas gratis',
-        affiliateLink: '#',
-        dataAiHint: 'pokerstars logo'
-    },
-    {
-        name: 'Betway',
-        logoUrl: 'https://iili.io/JADbJps.png',
-        bonus: 'Bono 150€ primeros depósitos',
-        affiliateLink: '#',
-        dataAiHint: 'betway logo'
-    },
-    {
-        name: 'DAF',
-        logoUrl: 'https://iili.io/JADbXf1.png',
-        bonus: 'Bono 50€ + 20€ primer depósito',
-        affiliateLink: '#',
-        dataAiHint: 'daf logo'
+        name: 'PlayRegal',
+        logoUrl: 'https://placehold.co/100x40.png',
+        bonus: 'Apuesta mínima 10€.',
+        affiliateLink: 'https://es1.playregal-snap.com/?affid=101369&subaff=b08f78301bc3ce49e774a5220fd06417&subaff1=&subaff2=&src=381b9474-f871-11ec-b939-0242ac120002',
+        dataAiHint: 'playregal logo'
     },
 ];
 
@@ -70,7 +49,7 @@ export const AffiliateSection = () => {
                             </div>
                             <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors shrink-0 w-full sm:w-auto">
                                 <a href={partner.affiliateLink} target="_blank" rel="noopener noreferrer">
-                                    Recibir
+                                    Ingresar
                                 </a>
                             </Button>
                         </Card>

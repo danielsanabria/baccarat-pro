@@ -21,7 +21,15 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      <div className="hero-text text-center relative z-10">
+      <div className="hero-text text-center relative z-10 flex flex-col items-center">
+        <Image
+            src="https://iili.io/JADeAmG.png"
+            alt="Hero Baccarat Logo"
+            width={150}
+            height={150}
+            className="mb-4"
+            data-ai-hint="hero logo"
+        />
         <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold" style={{ textShadow: '0 0 15px hsl(var(--primary) / 0.7)' }}>
           Domina el Arte del Baccarat.
         </h1>

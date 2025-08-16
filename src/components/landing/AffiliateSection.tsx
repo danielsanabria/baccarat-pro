@@ -9,6 +9,7 @@ const affiliatePartners = [
         name: 'Spin Platinum',
         logoUrl: 'https://placehold.co/100x40.png',
         bonus: 'Apuesta mínima 0,20 cent.',
+        requirement: 'Requiere VPN',
         affiliateLink: 'https://spinplatinum.com/',
         dataAiHint: 'spin platinum logo'
     },
@@ -16,6 +17,7 @@ const affiliatePartners = [
         name: 'PlayRegal',
         logoUrl: 'https://placehold.co/100x40.png',
         bonus: 'Apuesta mínima 10€.',
+        requirement: 'No requiere VPN',
         affiliateLink: 'https://es1.playregal-snap.com/?affid=101369&subaff=b08f78301bc3ce49e774a5220fd06417&subaff1=&subaff2=&src=381b9474-f871-11ec-b939-0242ac120002',
         dataAiHint: 'playregal logo'
     },
@@ -48,6 +50,7 @@ export const AffiliateSection = () => {
                                 <div className="text-left flex-grow">
                                     <p className="font-bold text-white/90">{partner.name}</p>
                                     <p className="text-white/70 text-sm md:text-base">{partner.bonus}</p>
+                                    <p className="text-xs text-primary">{partner.requirement}</p>
                                 </div>
                             </div>
                             <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors shrink-0 w-full sm:w-auto">

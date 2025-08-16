@@ -13,7 +13,7 @@ export const BottomNav = () => {
         <nav className="fixed bottom-0 left-0 right-0 h-16 bg-background/70 backdrop-blur-md border-t border-white/10 z-50">
             <div className="container mx-auto h-full flex items-center justify-between px-4">
                 <a href="#hero" className="flex items-center gap-2 font-headline text-xl text-primary hover:text-amber-300 transition-colors">
-                    <Image src="https://iili.io/JADeAmG.png" alt="Hero Baccarat Logo" width={32} height={32} data-ai-hint="hero logo" />
+                    <Image src="https://iili.io/JAfH4ss.png" alt="Hero Baccarat Logo" width={32} height={32} data-ai-hint="hero logo" />
                     <span>Hero Baccarat</span>
                 </a>
                 

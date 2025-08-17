@@ -12,7 +12,7 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
             <button className="group relative w-80 h-96 rounded-lg overflow-hidden border-2 border-primary/50 hover:border-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                <p className="absolute bottom-4 left-4 font-headline text-xl text-white">{title}</p>
+                <p className="absolute bottom-4 left-0 right-0 text-center font-headline text-xl text-white px-4">{title}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 text-white/50 group-hover:text-white group-hover:scale-110 transition-all duration-300" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
             </button>
             </DialogTrigger>

@@ -40,7 +40,7 @@ export const AffiliateSection = () => {
                                 <div className="w-28 h-12 relative flex items-center justify-center bg-white/10 rounded-md p-1 shrink-0">
                                     <Image 
                                         src={partner.logoUrl}
-                                        alt={`${partner.name} logo`}
+                                        alt={`Logo del casino ${partner.name}`}
                                         width={100}
                                         height={40}
                                         objectFit="contain"

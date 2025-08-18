@@ -2,9 +2,36 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
+const siteUrl = 'https://baccarat-pro.com'; // Replace with your actual domain
+
 export const metadata: Metadata = {
-  title: 'Baccarat Pro',
-  description: 'Domina el Arte del Baccarat. La estrategia definitiva para convertir cada mano en una oportunidad.',
+  title: 'Baccarat Pro | Señales y Estrategias para Ganar en Telegram',
+  description: 'Únete a Baccarat Pro y recibe señales de apuestas en tiempo real en nuestro canal de Telegram. Aprende la estrategia definitiva para ganar en Baccarat y maximizar tus ganancias.',
+  keywords: ['baccarat', 'estrategia baccarat', 'ganar baccarat', 'señales baccarat', 'telegram baccarat', 'apuestas online', 'casino online'],
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    url: siteUrl,
+    title: 'Baccarat Pro | Señales y Estrategias para Ganar',
+    description: 'Recibe señales de Baccarat en tiempo real y empieza a ganar desde hoy. Únete a nuestra comunidad de Telegram.',
+    images: [
+      {
+        url: 'https://iili.io/FbANuA7.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Baccarat Pro Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Baccarat Pro | Señales y Estrategias para Ganar',
+    description: 'Recibe señales de Baccarat en tiempo real y empieza a ganar desde hoy. Únete a nuestra comunidad de Telegram.',
+    images: ['https://iili.io/FbANuA7.jpg'],
+  },
 };
 
 export default function RootLayout({

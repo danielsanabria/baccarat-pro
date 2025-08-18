@@ -21,7 +21,7 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
                 width="100%" 
                 height="100%" 
                 src={`${videoUrl}?autoplay=1`} 
-                title="Reproductor de video de YouTube" 
+                title="Reproductor de video de YouTube sobre estrategias de Baccarat" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerPolicy="strict-origin-when-cross-domain" 

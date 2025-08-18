@@ -12,7 +12,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <Image
           src="https://iili.io/FsXRNup.jpg"
-          alt="Mesa de Baccarat con cartas"
+          alt="Mesa de Baccarat con cartas y fichas de casino, representando la estrategia de juego."
           layout="fill"
           objectFit="cover"
           priority

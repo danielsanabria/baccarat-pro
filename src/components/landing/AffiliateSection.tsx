@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/card';
 const affiliatePartners = [
     {
         name: 'Spin Platinum',
-        logoUrl: 'https://placehold.co/100x40.png',
+        logoUrl: 'https://iili.io/Fm3KD3x.png',
         bonus: 'Apuesta mínima 0,20 cent.',
         requirement: 'Requiere VPN',
         affiliateLink: 'https://go.spaffiliates.co/visit/?bta=35324&nci=5354',
@@ -15,7 +15,7 @@ const affiliatePartners = [
     },
     {
         name: 'PlayRegal',
-        logoUrl: 'https://placehold.co/100x40.png',
+        logoUrl: 'https://iili.io/Fm3KbYQ.png',
         bonus: 'Apuesta mínima 10€.',
         requirement: 'No requiere VPN',
         affiliateLink: 'https://suitglue.com/api/v3/offer/4?affiliate_source=CAES4471&affiliate_id=101603&url_id=173&free_1=es&free_2=101603',
@@ -28,10 +28,10 @@ export const AffiliateSection = () => {
         <section id="affiliates" className="py-16 px-4 bg-background">
             <div className="container mx-auto text-center">
                 <h2 className="font-headline text-4xl md:text-5xl text-white mb-4" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>
-                    Mejores Bonos de Apuestas
+                    Nuestros casinos Online
                 </h2>
                 <p className="text-white/50 text-sm mb-12">
-                    +18 | Publicidad | Juega con responsabilidad
+                    +18 | Juega con responsabilidad
                 </p>
                 <div className="max-w-3xl mx-auto space-y-4">
                     {affiliatePartners.map((partner, index) => (

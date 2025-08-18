@@ -42,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="dark">
       <head>
+        <meta name="google-site-verification" content="s20DPzaONOTfWQIAQxyvYn8zLX1zzzpgFr5pVTqhpik" />
         <link rel="icon" href="https://iili.io/FbANuA7.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />

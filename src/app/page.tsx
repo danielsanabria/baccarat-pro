@@ -8,7 +8,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { HeroSection } from '@/components/landing/HeroSection';
 import { StrategySection } from '@/components/landing/StrategySection';
 import { PricingSection } from '@/components/landing/PricingSection';
-import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
+// import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { CtaSection } from '@/components/landing/CtaSection';
 import { BottomNav } from '@/components/landing/BottomNav';
@@ -48,7 +48,7 @@ const LandingPage = () => {
                 <PricingSection />
                 <AffiliateSection />
                 <CalculatorSection />
-                <TestimonialsSection />
+                {/* <TestimonialsSection /> */}
                 <FaqSection />
                 <CtaSection />
             </main>

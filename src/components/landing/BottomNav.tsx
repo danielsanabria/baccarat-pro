@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
-import { Send, Menu, Calculator } from 'lucide-react';
+import { Send, Menu } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import Image from 'next/image';
 
@@ -18,8 +18,10 @@ const NavLinks = () => (
 export const BottomNav = () => {
     const isMobile = useIsMobile();
     
+    const navClasses = "fixed left-0 right-0 h-16 bg-background/70 backdrop-blur-md z-50 md:top-0 md:bottom-auto bottom-0 md:border-b border-t md:border-t-0 border-white/10";
+
     return (
-        <nav className="fixed bottom-0 left-0 right-0 h-16 bg-background/70 backdrop-blur-md border-t border-white/10 z-50">
+        <nav className={navClasses}>
             <div className="container mx-auto h-full flex items-center justify-between px-4">
                 <a href="#hero" className="flex items-center gap-2 font-headline text-xl text-primary hover:text-amber-300 transition-colors">
                     <Image src="https://iili.io/FbANuA7.png" alt="Baccarat Pro Logo" width={32} height={32} data-ai-hint="baccarat logo" />

@@ -71,14 +71,14 @@ export const CalculatorSection = () => {
                                 <Table>
                                     <TableHeader>
                                         <TableRow className="border-primary/20">
-                                            <TableHead className="text-white/80 font-bold">Ronda</TableHead>
-                                            <TableHead className="text-right text-white/80 font-bold">Apuesta</TableHead>
+                                            <TableHead className="text-white/80 font-bold">Ronda Actual</TableHead>
+                                            <TableHead className="text-right text-white/80 font-bold">Valor</TableHead>
                                         </TableRow>
                                     </TableHeader>
                                     <TableBody>
                                         {martingaleBets.map((bet, index) => (
                                             <TableRow key={index} className="border-primary/20">
-                                                <TableCell className="text-white/90">Ronda {index + 1}</TableCell>
+                                                <TableCell className="text-white/90">Apuesta {index + 1}</TableCell>
                                                 <TableCell className="text-right font-mono text-primary">{bet.toFixed(2)}€</TableCell>
                                             </TableRow>
                                         ))}

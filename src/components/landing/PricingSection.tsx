@@ -20,6 +20,8 @@ const plans = [
         ],
         cta: 'Empieza Gratis',
         highlight: false,
+        link: "https://t.me/+AbrdLUEQ-9JmZjFk",
+        disabled: false
     },
     {
         name: 'Premium',
@@ -33,8 +35,9 @@ const plans = [
             { text: 'Soporte prioritario', included: true },
             { text: 'Sesiones 1-a-1 con expertos', included: false },
         ],
-        cta: 'Hazte Premium',
+        cta: 'Próximamente',
         highlight: true,
+        disabled: true
     },
     {
         name: 'Exclusivo Premium',
@@ -48,8 +51,9 @@ const plans = [
             { text: 'Soporte prioritario', included: true },
             { text: 'Sesiones 1-a-1 con expertos', included: true },
         ],
-        cta: 'Conviértete en Exclusivo',
+        cta: 'Próximamente',
         highlight: false,
+        disabled: true
     },
 ];
 
@@ -82,8 +86,12 @@ export const PricingSection = () => {
                                 </ul>
                             </CardContent>
                             <CardFooter>
-                                <Button size="lg" className={`w-full font-bold ${plan.highlight ? 'bg-primary text-primary-foreground hover:bg-amber-500' : ''}`} variant={plan.highlight ? 'default' : 'outline'}>
-                                    {plan.cta}
+                                <Button asChild={!plan.disabled} size="lg" className={`w-full font-bold ${plan.highlight ? 'bg-primary text-primary-foreground hover:bg-amber-500' : ''}`} variant={plan.highlight ? 'default' : 'outline'} disabled={plan.disabled}>
+                                    {plan.link ? (
+                                      <a href={plan.link} target="_blank" rel="noopener noreferrer">{plan.cta}</a>
+                                    ) : (
+                                      <span>{plan.cta}</span>
+                                    )}
                                 </Button>
                             </CardFooter>
                         </Card>

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '../ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
-import { Send, Menu } from 'lucide-react';
+import { Send, Menu, Calculator } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import Image from 'next/image';
 
@@ -11,6 +11,7 @@ const NavLinks = () => (
         <a href="#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
         <a href="#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
         <a href="#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
+        <a href="#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
     </>
 );
 
@@ -58,6 +59,9 @@ export const BottomNav = () => {
                                     </SheetClose>
                                     <SheetClose asChild>
                                         <a href="#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
+                                    </SheetClose>
+                                    <SheetClose asChild>
+                                        <a href="#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
                                     </SheetClose>
                                 </div>
                             </SheetContent>

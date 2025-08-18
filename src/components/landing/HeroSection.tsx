@@ -13,7 +13,7 @@ export const HeroSection = () => {
         <Image
           src="https://iili.io/FsXRNup.jpg"
           alt="Mesa de Baccarat con cartas y fichas de casino, representando la estrategia de juego."
-          layout="fill"
+          fill
           objectFit="cover"
           priority
           data-ai-hint="baccarat table cards"

@@ -9,7 +9,7 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
     <div className="flex flex-col items-center gap-4">
         <Dialog>
             <DialogTrigger asChild>
-            <button className="group relative w-80 h-96 rounded-lg overflow-hidden border-2 border-primary/50 hover:border-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+            <button className="group relative w-96 h-54 rounded-lg overflow-hidden border-2 border-primary/50 hover:border-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <p className="absolute bottom-4 left-0 right-0 text-center font-headline text-xl text-white px-4">{title}</p>

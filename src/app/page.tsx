@@ -46,8 +46,8 @@ const LandingPage = () => {
             <main>
                 <HeroSection />
                 <StrategySection />
-                <PricingSection />
                 <AffiliateSection />
+                <PricingSection />
                 <CalculatorSection />
                 {/* <TestimonialsSection /> */}
                 <FaqSection />

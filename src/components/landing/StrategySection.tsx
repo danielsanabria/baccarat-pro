@@ -39,7 +39,6 @@ export const StrategySection = () => {
             <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-8">
                 <VideoTrigger title="El Martingala y el 98% de Aciertos" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
                 <VideoTrigger title="Configuración de Mesas" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
-                <VideoTrigger title="Configuración de VPN" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
             </div>
         </section>
     )

@@ -64,7 +64,7 @@ export const VpnSection = () => {
                             </div>
                         </div>
                         <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors shrink-0 w-full sm:w-auto">
-                            <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=102047&url_id=902" target="_blank" rel="noopener noreferrer">
+                            <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=129626&url_id=902" target="_blank" rel="noopener noreferrer">
                                 Obtener VPN
                             </a>
                         </Button>

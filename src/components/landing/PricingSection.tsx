@@ -16,8 +16,7 @@ const plans = [
             { text: 'Guía de configuración de mesas', included: true },
             { text: 'Guía de configuración de VPN', included: true },
             { text: '3 Señales de apuestas diarias', included: true },
-            { text: '5 señales de apuestas VIP', included: false },
-            { text: 'Soporte Prioritario', included: false },
+
 
         ],
         cta: 'Empieza Gratis',

@@ -8,15 +8,17 @@ import { Check, X } from 'lucide-react';
 const plans = [
     {
         name: 'Gratis',
-        price: '€0',
+        price: '0€',
         description: 'Empieza a explorar nuestras estrategias básicas.',
         features: [
             { text: 'Acceso a estrategia Martingala', included: true },
             { text: 'Acceso a la comunidad', included: true },
-            { text: 'Guía de configuración de mesas', included: false },
-            { text: 'Guía de configuración de VPN', included: false },
-            { text: 'Soporte prioritario', included: false },
-            { text: 'Sesiones 1-a-1 con expertos', included: false },
+            { text: 'Guía de configuración de mesas', included: true },
+            { text: 'Guía de configuración de VPN', included: true },
+            { text: '3 Señales de apuestas diarias', included: true },
+            { text: '5 señales de apuestas VIP', included: false },
+            { text: 'Soporte Prioritario', included: false },
+
         ],
         cta: 'Empieza Gratis',
         highlight: false,
@@ -25,15 +27,17 @@ const plans = [
     },
     {
         name: 'Premium',
-        price: '', // Ocultamos el precio
+        price: '-- €', // Ocultamos el precio
         description: 'Desbloquea todas las herramientas para maximizar tus ganancias.',
         features: [
             { text: 'Acceso a estrategia Martingala', included: true },
             { text: 'Acceso a la comunidad', included: true },
             { text: 'Guía de configuración de mesas', included: true },
             { text: 'Guía de configuración de VPN', included: true },
-            { text: 'Soporte prioritario', included: true },
-            { text: 'Sesiones 1-a-1 con expertos', included: false },
+            { text: '3 Señales de apuestas diarias', included: true },
+            { text: '5 señales de apuestas VIP', included: true },
+            { text: 'Soporte Prioritario', included: true },
+
         ],
         cta: 'Próximamente',
         highlight: true,

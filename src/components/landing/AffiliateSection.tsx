@@ -43,7 +43,7 @@ export const AffiliateSection = () => {
                                         alt={`Logo del casino ${partner.name}`}
                                         width={100}
                                         height={40}
-                                        objectFit="contain"
+                                        className="object-contain"
                                         data-ai-hint={partner.dataAiHint}
                                     />
                                 </div>

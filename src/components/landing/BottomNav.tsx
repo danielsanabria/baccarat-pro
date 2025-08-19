@@ -25,7 +25,7 @@ export const BottomNav = () => {
             <div className="container mx-auto h-full flex items-center justify-between px-4">
                 <a href="#hero" className="flex items-center gap-2 font-headline text-xl text-primary hover:text-amber-300 transition-colors">
                     <Image src="https://iili.io/FbANuA7.png" alt="Baccarat Pro Logo" width={32} height={32} data-ai-hint="baccarat logo" />
-                    <span>Hero Baccarat</span>
+                    <span>El tapete de Hero</span>
                 </a>
                 
                 <div className="hidden md:flex items-center gap-6 text-white/90">

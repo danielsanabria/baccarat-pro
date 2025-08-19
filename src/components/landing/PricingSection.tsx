@@ -60,7 +60,7 @@ export const PricingSection = () => {
             <div className="container mx-auto text-center">
                 <h2 className="font-headline text-4xl md:text-5xl text-white mb-4" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Elige tu Plan</h2>
                 <p className="text-white/70 max-w-2xl mx-auto mb-12">Tenemos un plan para cada tipo de jugador. Encuentra el que mejor se adapte a ti.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto items-start md:max-w-md">
                     {plans.filter(p => p.name === 'Gratis').map((plan) => (
                         <Card key={plan.name} className={`flex flex-col bg-card/60 backdrop-blur-sm border-primary/30 transition-all duration-300 ${plan.highlight ? 'border-primary shadow-[0_0_25px_hsl(var(--primary)/0.4)] md:scale-105' : 'hover:border-primary/60 hover:-translate-y-2'}`}>
                             <CardHeader className="text-left">
@@ -86,6 +86,7 @@ export const PricingSection = () => {
                             </CardFooter>
                         </Card>
                     ))}
+                    {/*
                      <Card className={`flex flex-col bg-card/60 backdrop-blur-sm border-primary/30 transition-all duration-300 border-primary shadow-[0_0_25px_hsl(var(--primary)/0.4)] md:scale-105`}>
                             <CardHeader className="text-left">
                                 <CardTitle className="font-headline text-3xl text-primary">Premium</CardTitle>
@@ -103,6 +104,7 @@ export const PricingSection = () => {
                                 </Button>
                             </CardFooter>
                         </Card>
+                    */}
                 </div>
             </div>
         </section>

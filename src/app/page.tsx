@@ -15,6 +15,7 @@ import { BottomNav } from '@/components/landing/BottomNav';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { AffiliateSection } from '@/components/landing/AffiliateSection';
 import { CalculatorSection } from '@/components/landing/CalculatorSection';
+import { Footer } from '@/components/landing/Footer';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -53,6 +54,7 @@ const LandingPage = () => {
                 <CtaSection />
             </main>
             
+            <Footer />
             <BottomNav />
         </div>
     );

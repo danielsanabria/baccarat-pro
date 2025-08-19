@@ -25,7 +25,7 @@ const affiliatePartners = [
 
 export const AffiliateSection = () => {
     return (
-        <section id="affiliates" className="py-16 px-4 bg-background">
+        <section id="affiliates" className="pt-8 pb-16 px-4 bg-background">
             <div className="container mx-auto text-center">
                 <h2 className="font-headline text-4xl md:text-5xl text-white mb-4" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>
                     Nuestros casinos Online

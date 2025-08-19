@@ -41,7 +41,7 @@ export const VpnSection = () => {
                     Configuración VPN
                 </h2>
                 <div className="flex justify-center mb-12">
-                    <VideoTrigger title="Configuración VPN (Casos Específicos)" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" />
+                    <VideoTrigger title="Configuración VPN" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" />
                 </div>
                 
                 <div className="max-w-3xl mx-auto space-y-4">
@@ -49,7 +49,7 @@ export const VpnSection = () => {
                         <div className="flex items-center gap-4 w-full">
                             <div className="w-28 h-12 relative flex items-center justify-center bg-white/10 rounded-md p-1 shrink-0">
                                 <Image 
-                                    src="https://iili.io/Jc2j69s.png"
+                                    src="https://iili.io/FpL0fJj.png"
                                     alt="Logo de NordVPN"
                                     width={100}
                                     height={40}
@@ -59,8 +59,8 @@ export const VpnSection = () => {
                             </div>
                             <div className="text-left flex-grow">
                                 <p className="font-bold text-white/90">NordVPN</p>
-                                <p className="text-white/70 text-sm md:text-base">Navega de forma segura y accede a casinos sin restricciones geográficas.</p>
-                                <p className="text-xs text-primary">Recomendado para acceder a todos los casinos</p>
+                                <p className="text-white/70 text-sm md:text-base">Navega de forma segura y accede a casinos sin restricciones</p>
+                                <p className="text-xs text-primary">Recomendado para Spin Platinum</p>
                             </div>
                         </div>
                         <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors shrink-0 w-full sm:w-auto">

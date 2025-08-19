@@ -14,6 +14,7 @@ import { CtaSection } from '@/components/landing/CtaSection';
 import { BottomNav } from '@/components/landing/BottomNav';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { AffiliateSection } from '@/components/landing/AffiliateSection';
+import { VpnSection } from '@/components/landing/VpnSection';
 import { CalculatorSection } from '@/components/landing/CalculatorSection';
 import { Footer } from '@/components/landing/Footer';
 
@@ -47,6 +48,7 @@ const LandingPage = () => {
                 <HeroSection />
                 <StrategySection />
                 <AffiliateSection />
+                <VpnSection />
                 <PricingSection />
                 <CalculatorSection />
                 {/* <TestimonialsSection /> */}

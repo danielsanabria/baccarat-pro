@@ -1,15 +1,21 @@
 
 "use client";
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import { MoveRight } from 'lucide-react';
+import Image from 'next/image';
 
-const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, videoUrl: string, registrationLink: string }) => (
+const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoUrl: string, thumbnailUrl: string }) => (
     <div className="flex flex-col items-center gap-4">
         <Dialog>
             <DialogTrigger asChild>
             <button className="group relative w-96 h-56 rounded-lg overflow-hidden border-2 border-primary/50 hover:border-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+                <Image
+                    src={thumbnailUrl}
+                    alt={`Miniatura del video: ${title}`}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint="video thumbnail"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <p className="absolute bottom-4 left-0 right-0 text-center font-headline text-xl text-white px-4">{title}</p>
@@ -24,7 +30,6 @@ const VideoTrigger = ({ title, videoUrl, registrationLink }: { title: string, vi
                 title="Reproductor de video de YouTube sobre estrategias de Baccarat" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-domain" 
                 allowFullScreen>
             </iframe>
             </DialogContent>
@@ -37,8 +42,16 @@ export const StrategySection = () => {
         <section id="strategy" className="relative flex flex-col items-center justify-center py-16 px-8 bg-background">
              <h2 className="font-headline text-4xl md:text-5xl text-white mb-12 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Descubre Cómo Ganamos</h2>
             <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-8">
-                <VideoTrigger title="El Martingala y el 98% de Aciertos" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
-                <VideoTrigger title="Configuración de Mesas" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" registrationLink="#cta" />
+                <VideoTrigger 
+                    title="Mi Estrategia Revelada" 
+                    videoUrl="https://www.youtube.com/embed/UqlCSG3zywM?si=vP2nCRPmm1EISJE4" 
+                    thumbnailUrl="https://placehold.co/384x224.png" 
+                />
+                <VideoTrigger 
+                    title="Como configurar las mesas" 
+                    videoUrl="https://www.youtube.com/embed/3ans71Eedz8?si=TDeGrX-aFEnd7bWD" 
+                    thumbnailUrl="https://placehold.co/384x224.png" 
+                />
             </div>
         </section>
     )

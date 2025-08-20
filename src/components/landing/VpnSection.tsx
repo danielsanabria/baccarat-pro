@@ -6,11 +6,18 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
-const VideoTrigger = ({ title, videoUrl }: { title: string, videoUrl: string }) => (
+const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoUrl: string, thumbnailUrl: string }) => (
     <div className="flex flex-col items-center gap-4">
         <Dialog>
             <DialogTrigger asChild>
             <button className="group relative w-96 h-56 rounded-lg overflow-hidden border-2 border-primary/50 hover:border-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+                <Image
+                    src={thumbnailUrl}
+                    alt={`Miniatura del video: ${title}`}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint="video thumbnail"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <p className="absolute bottom-4 left-0 right-0 text-center font-headline text-xl text-white px-4">{title}</p>
@@ -41,7 +48,11 @@ export const VpnSection = () => {
                     Configuración VPN
                 </h2>
                 <div className="flex justify-center mb-12">
-                    <VideoTrigger title="Configuración VPN" videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f" />
+                    <VideoTrigger 
+                        title="Configuración VPN" 
+                        videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f"
+                        thumbnailUrl="https://placehold.co/384x224.png"
+                    />
                 </div>
                 
                 <div className="max-w-3xl mx-auto space-y-4">

@@ -9,7 +9,7 @@ const affiliatePartners = [
         name: 'Spin Platinum',
         logoUrl: 'https://iili.io/Fm3KD3x.png',
         bonus: 'Apuesta mínima 0,20 cent.',
-        requirement: 'Casino recomendado',
+        requirement: 'Requiere VPN',
         affiliateLink: 'https://go.spaffiliates.co/visit/?bta=35324&nci=5354',
         dataAiHint: 'spin platinum logo'
     },
@@ -17,7 +17,7 @@ const affiliatePartners = [
         name: 'PlayRegal',
         logoUrl: 'https://iili.io/Fm3KbYQ.png',
         bonus: 'Apuesta mínima 10€.',
-        requirement: 'Casino recomendado',
+        requirement: 'Sin VPN',
         affiliateLink: 'https://suitglue.com/api/v3/offer/4?affiliate_source=CAES4471&affiliate_id=101603&url_id=173&free_1=es&free_2=101603',
         dataAiHint: 'playregal logo'
     },

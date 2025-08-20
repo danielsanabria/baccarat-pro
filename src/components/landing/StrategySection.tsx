@@ -1,7 +1,7 @@
 
 "use client";
 import React from 'react';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from '@/components/ui/dialog';
 import Image from 'next/image';
 
 const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoUrl: string, thumbnailUrl: string }) => (
@@ -23,15 +23,16 @@ const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoU
             </button>
             </DialogTrigger>
             <DialogContent className="max-w-4xl h-[70vh] bg-black border-primary/50 p-0">
-            <iframe 
-                width="100%" 
-                height="100%" 
-                src={`${videoUrl}?autoplay=1`} 
-                title="Reproductor de video de YouTube sobre estrategias de Baccarat" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowFullScreen>
-            </iframe>
+                <DialogTitle className="sr-only">{title}</DialogTitle>
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src={`${videoUrl}?autoplay=1`}
+                    title={`Reproductor de video de YouTube: ${title}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen>
+                </iframe>
             </DialogContent>
         </Dialog>
     </div>
@@ -42,15 +43,15 @@ export const StrategySection = () => {
         <section id="strategy" className="relative flex flex-col items-center justify-center py-16 px-8 bg-background">
              <h2 className="font-headline text-4xl md:text-5xl text-white mb-12 text-center" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Descubre Cómo Ganamos</h2>
             <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-8">
-                <VideoTrigger 
-                    title="Mi Estrategia Revelada" 
-                    videoUrl="https://www.youtube.com/embed/UqlCSG3zywM?si=vP2nCRPmm1EISJE4" 
-                    thumbnailUrl="https://placehold.co/384x224.png" 
+                <VideoTrigger
+                    title="Mi Estrategia Revelada"
+                    videoUrl="https://www.youtube.com/embed/UqlCSG3zywM?si=vP2nCRPmm1EISJE4"
+                    thumbnailUrl="https://placehold.co/384x224.png"
                 />
-                <VideoTrigger 
-                    title="Como configurar las mesas" 
-                    videoUrl="https://www.youtube.com/embed/3ans71Eedz8?si=TDeGrX-aFEnd7bWD" 
-                    thumbnailUrl="https://placehold.co/384x224.png" 
+                <VideoTrigger
+                    title="Como configurar las mesas"
+                    videoUrl="https://www.youtube.com/embed/3ans71Eedz8?si=TDeGrX-aFEnd7bWD"
+                    thumbnailUrl="https://placehold.co/384x224.png"
                 />
             </div>
         </section>

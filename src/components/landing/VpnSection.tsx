@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from '@/components/ui/dialog';
 
 const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoUrl: string, thumbnailUrl: string }) => (
     <div className="flex flex-col items-center gap-4">
@@ -25,16 +25,17 @@ const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoU
             </button>
             </DialogTrigger>
             <DialogContent className="max-w-4xl h-[70vh] bg-black border-primary/50 p-0">
-            <iframe 
-                width="100%" 
-                height="100%" 
-                src={`${videoUrl}?autoplay=1`} 
-                title="Reproductor de video de YouTube sobre configuración de VPN" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-domain" 
-                allowFullScreen>
-            </iframe>
+                <DialogTitle className="sr-only">{title}</DialogTitle>
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src={`${videoUrl}?autoplay=1`}
+                    title={`Reproductor de video de YouTube: ${title}`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-domain"
+                    allowFullScreen>
+                </iframe>
             </DialogContent>
         </Dialog>
     </div>
@@ -48,9 +49,9 @@ export const VpnSection = () => {
                     Configuración VPN
                 </h2>
                 <div className="flex justify-center mb-12">
-                    <VideoTrigger 
-                        title="Configuración VPN" 
-                        videoUrl="https://www.youtube.com/embed/z4e92_a2tXI?si=yv7QyGv9D2uY-w_f"
+                    <VideoTrigger
+                        title="Configuración VPN"
+                        videoUrl="https://www.youtube.com/embed/XpX3Zz0u-uw?si=ShuhfuqMkaIrYWYk"
                         thumbnailUrl="https://placehold.co/384x224.png"
                     />
                 </div>
@@ -59,7 +60,7 @@ export const VpnSection = () => {
                     <Card className="flex flex-col sm:flex-row items-center justify-between p-4 bg-card/60 backdrop-blur-sm border-primary/20 hover:border-primary/40 transition-colors gap-4">
                         <div className="flex items-center gap-4 w-full">
                             <div className="w-28 h-12 relative flex items-center justify-center bg-white/10 rounded-md p-1 shrink-0">
-                                <Image 
+                                <Image
                                     src="https://iili.io/FpL0fJj.png"
                                     alt="Logo de NordVPN"
                                     width={100}

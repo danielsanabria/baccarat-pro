@@ -51,7 +51,7 @@ export const VpnSection = () => {
                     <VideoTrigger
                         title="Configuración VPN"
                         videoUrl="https://www.youtube.com/embed/XpX3Zz0u-uw?si=ShuhfuqMkaIrYWYk"
-                        thumbnailUrl="https://placehold.co/384x224.png"
+                        thumbnailUrl="https://iili.io/FyAcdbV.md.jpg"
                     />
                 </div>
                 

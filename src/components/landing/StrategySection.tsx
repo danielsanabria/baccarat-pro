@@ -46,12 +46,12 @@ export const StrategySection = () => {
                 <VideoTrigger
                     title="Mi Estrategia Revelada"
                     videoUrl="https://www.youtube.com/embed/UqlCSG3zywM?si=vP2nCRPmm1EISJE4"
-                    thumbnailUrl="https://placehold.co/384x224.png"
+                    thumbnailUrl="https://iili.io/FyAc3zB.md.jpg"
                 />
                 <VideoTrigger
                     title="Como configurar las mesas"
                     videoUrl="https://www.youtube.com/embed/3ans71Eedz8?si=TDeGrX-aFEnd7bWD"
-                    thumbnailUrl="https://placehold.co/384x224.png"
+                    thumbnailUrl="https://iili.io/FyAcJOQ.md.jpg"
                 />
             </div>
         </section>

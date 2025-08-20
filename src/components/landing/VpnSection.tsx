@@ -33,7 +33,6 @@ const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoU
                     title={`Reproductor de video de YouTube: ${title}`}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-domain"
                     allowFullScreen>
                 </iframe>
             </DialogContent>

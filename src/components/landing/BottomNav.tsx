@@ -10,10 +10,10 @@ import Image from 'next/image';
 
 const NavLinks = () => (
     <>
-        <a href="#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
-        <a href="#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
-        <a href="#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
-        <a href="#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
+        <a href="/#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
+        <a href="/#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
+        <a href="/#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
+        <a href="/#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
     </>
 );
 
@@ -25,7 +25,7 @@ export const BottomNav = () => {
     return (
         <nav className={navClasses}>
             <div className="container mx-auto h-full flex items-center justify-between px-4">
-                <a href="#hero" className="flex items-center gap-2 font-headline text-xl text-primary hover:text-amber-300 transition-colors">
+                <a href="/#hero" className="flex items-center gap-2 font-headline text-xl text-primary hover:text-amber-300 transition-colors">
                     <Image src="https://iili.io/FbANuA7.png" alt="Baccarat Pro Logo" width={32} height={32} data-ai-hint="baccarat logo" />
                     <span>El tapete de Hero</span>
                 </a>
@@ -56,16 +56,16 @@ export const BottomNav = () => {
                                 </SheetHeader>
                                 <div className="grid gap-4 py-4 text-center text-lg">
                                     <SheetClose asChild>
-                                        <a href="#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
+                                        <a href="/#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
                                     </SheetClose>
                                      <SheetClose asChild>
-                                        <a href="#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
+                                        <a href="/#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
                                     </SheetClose>
                                     <SheetClose asChild>
-                                        <a href="#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
+                                        <a href="/#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
                                     </SheetClose>
                                     <SheetClose asChild>
-                                        <a href="#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
+                                        <a href="/#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
                                     </SheetClose>
                                 </div>
                             </SheetContent>

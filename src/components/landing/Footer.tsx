@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Link from 'next/link';
 
 export const Footer = () => {
     return (
@@ -8,6 +9,11 @@ export const Footer = () => {
                 <p className="mb-4 text-sm">
                     El contenido de este sitio web es solo para fines informativos y de entretenimiento. El juego puede ser adictivo. Juegue de manera responsable. Debe tener la edad legal para jugar en su jurisdicción. No garantizamos ningún resultado específico.
                 </p>
+                <div className="flex justify-center gap-4 text-sm mb-4">
+                    <Link href="/politica-de-privacidad" className="hover:text-primary transition-colors">Política de Privacidad</Link>
+                    <Link href="/terminos-y-condiciones" className="hover:text-primary transition-colors">Términos y Condiciones</Link>
+                    <Link href="/politica-de-cookies" className="hover:text-primary transition-colors">Política de Cookies</Link>
+                </div>
                 <p className="text-white/80">
                     &copy; 2025 El tapete de Hero. Todos los derechos reservados.
                 </p>

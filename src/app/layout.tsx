@@ -26,6 +26,8 @@ export default function RootLayout({
     const consent = localStorage.getItem('cookie_consent');
     if (consent) {
       setCookieConsent(JSON.parse(consent));
+    } else {
+      setCookieConsent(false);
     }
   }, []);
 

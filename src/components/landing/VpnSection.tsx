@@ -29,8 +29,7 @@ const VideoTrigger = ({ title, videoUrl, thumbnailUrl }: { title: string, videoU
                 <iframe
                     width="100%"
                     height="100%"
-                    src={`${videoUrl}?autoplay=1`}
-                    title={`Reproductor de video de YouTube: ${title}`}
+                    src={`${videoUrl.replace("watch?v=", "embed/")}?autoplay=1`}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen>

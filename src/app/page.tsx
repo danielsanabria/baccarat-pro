@@ -44,6 +44,7 @@ const LandingPage = () => {
 
     return (
         <div className="relative bg-background">
+            <BottomNav />
             <main>
                 <HeroSection />
                 <StrategySection />
@@ -57,7 +58,6 @@ const LandingPage = () => {
             </main>
             
             <Footer />
-            <BottomNav />
         </div>
     );
 };

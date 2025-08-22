@@ -1,12 +1,9 @@
 
-import { BottomNav } from '@/components/landing/BottomNav';
-import { Footer } from '@/components/landing/Footer';
 import React from 'react';
 
 const TermsAndConditionsPage = () => {
     return (
         <div className="bg-background text-white min-h-screen">
-            <BottomNav />
             <main className="container mx-auto px-4 py-24 pt-32">
                 <h1 className="font-headline text-4xl md:text-5xl text-primary mb-8">Términos y Condiciones</h1>
                 <div className="space-y-6 text-white/80 prose prose-invert max-w-none">
@@ -44,7 +41,7 @@ const TermsAndConditionsPage = () => {
 
                     <h2 className="text-2xl font-headline text-primary pt-4">7. Cambios en los Términos</h2>
                     <p>
-                        Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Le notificaremos cualquier cambio publicando los nuevos Términos y Condiciones en esta página.
+                        Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en any momento. Le notificaremos cualquier cambio publicando los nuevos Términos y Condiciones en esta página.
                     </p>
 
                      <h2 className="text-2xl font-headline text-primary pt-4">Contacto</h2>
@@ -53,7 +50,6 @@ const TermsAndConditionsPage = () => {
                     </p>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 };

@@ -1,12 +1,9 @@
 
-import { BottomNav } from '@/components/landing/BottomNav';
-import { Footer } from '@/components/landing/Footer';
 import React from 'react';
 
 const PrivacyPolicyPage = () => {
     return (
         <div className="bg-background text-white min-h-screen">
-            <BottomNav />
             <main className="container mx-auto px-4 py-24 pt-32">
                 <h1 className="font-headline text-4xl md:text-5xl text-primary mb-8">Política de Privacidad</h1>
                 <div className="space-y-6 text-white/80 prose prose-invert max-w-none">
@@ -64,7 +61,6 @@ const PrivacyPolicyPage = () => {
                     </p>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 };

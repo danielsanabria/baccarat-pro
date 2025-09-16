@@ -4,22 +4,22 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 
 const testimonials = [
   { 
-    title: 'El que Empezó Gratis',
+    title: 'El Escéptico Convertido',
     rating: '⭐⭐⭐⭐⭐',
-    quote: 'Entré al canal gratuito de Telegram por curiosidad. Después de ver la efectividad de las primeras 3 señales que mandaron, me uní al VIP sin pensarlo. La frecuencia y el soporte del equipo son de otro nivel. Ya he recuperado la inversión de la membresía de sobra.',
-    author: '— Carlos M., Medellín' 
+    quote: 'Al principio no me fiaba. Me uní al canal gratis y vi cómo llegaban las señales: "Apuesta a Jugador", "Ahora a Banca". Seguí un par con poco dinero y acertaron. Esa misma tarde ya estaba en el VIP. Llevo dos semanas y mi bankroll ha crecido un 40%. Es increíble.',
+    author: '— Javier R., Valencia' 
   },
   { 
-    title: 'El Miembro VIP Ocupado',
+    title: 'La Jugadora Ocupada',
     rating: '⭐⭐⭐⭐⭐',
-    quote: 'Pagar por el servicio VIP es la mejor decisión que he tomado. Mi trabajo no me deja tiempo para analizar mesas. Ahora, simplemente espero la notificación en mi móvil, hago la apuesta que indican los expertos y sigo con mi día. Me ahorran tiempo y me generan ingresos.',
-    author: '— Sofía G., Madrid'
+    quote: 'No tengo tiempo para analizar patrones ni nada de eso. Este servicio es perfecto. Me llega la notificación de Telegram, hago la apuesta que dicen y listo. He ganado más en un mes que en un año jugando por mi cuenta. ¡Y sin el estrés de tener que decidir yo!',
+    author: '— Lucía F., CDMX'
   },
   { 
-    title: 'El que Valora la Estrategia',
+    title: 'El Estratega',
     rating: '⭐⭐⭐⭐⭐',
-    quote: 'Lo mejor no son solo las señales, es que te enseñan a gestionar tu capital. Antes, una mala racha me destrozaba. Ahora, con su guía sobre la estrategia Martingala, sé exactamente cómo reaccionar ante una pérdida para recuperarme en la siguiente jugada. Es un servicio completo.',
-    author: '— Javier L., Buenos Aires'
+    quote: 'Lo que me convenció fue entender la estrategia. No se trata de acertar siempre, sino de gestionar el riesgo. Con la Martingala que explican, incluso si hay una pérdida, la siguiente señal te ayuda a recuperarte y salir con ganancias. Es apostar con inteligencia, no al azar.',
+    author: '— David S., Bogotá'
   },
 ];
 

@@ -8,13 +8,11 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { HeroSection } from '@/components/landing/HeroSection';
 import { StrategySection } from '@/components/landing/StrategySection';
 import { PricingSection } from '@/components/landing/PricingSection';
-// import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
+import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { CtaSection } from '@/components/landing/CtaSection';
 import { BottomNav } from '@/components/landing/BottomNav';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { AffiliateSection } from '@/components/landing/AffiliateSection';
-import { VpnSection } from '@/components/landing/VpnSection';
 import { CalculatorSection } from '@/components/landing/CalculatorSection';
 import { Footer } from '@/components/landing/Footer';
 
@@ -28,10 +26,10 @@ const LandingPage = () => {
             if (!anchor) return;
             
             const href = anchor.getAttribute('href');
-            if (!href || !href.startsWith('#')) return;
+            if (!href || !href.startsWith('/#')) return;
             
             e.preventDefault();
-            const elementId = href.substring(1);
+            const elementId = href.substring(2);
             const element = document.getElementById(elementId);
 
             if (element) {
@@ -48,11 +46,9 @@ const LandingPage = () => {
             <main>
                 <HeroSection />
                 <StrategySection />
-                <AffiliateSection />
-                <VpnSection />
                 <PricingSection />
+                <TestimonialsSection />
                 <CalculatorSection />
-                {/* <TestimonialsSection /> */}
                 <FaqSection />
                 <CtaSection />
             </main>

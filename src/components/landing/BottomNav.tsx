@@ -11,8 +11,8 @@ import Image from 'next/image';
 const NavLinks = () => (
     <>
         <a href="/#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
-        <a href="/#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
         <a href="/#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
+        <a href="/#testimonials" className="hover:text-primary transition-colors block py-2">Opiniones</a>
         <a href="/#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
     </>
 );
@@ -58,11 +58,11 @@ export const BottomNav = () => {
                                     <SheetClose asChild>
                                         <a href="/#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
                                     </SheetClose>
-                                     <SheetClose asChild>
-                                        <a href="/#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
-                                    </SheetClose>
                                     <SheetClose asChild>
                                         <a href="/#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
+                                    </SheetClose>
+                                     <SheetClose asChild>
+                                        <a href="/#testimonials" className="hover:text-primary transition-colors block py-2">Opiniones</a>
                                     </SheetClose>
                                     <SheetClose asChild>
                                         <a href="/#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>

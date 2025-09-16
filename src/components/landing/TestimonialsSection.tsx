@@ -81,12 +81,12 @@ export const TestimonialsSection = () => {
                 ]}
                 className="w-full max-w-7xl"
             >
-                <CarouselContent>
+                <CarouselContent className="-ml-4 py-4">
                     {testimonials.map((t, i) => (
-                        <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
-                            <div className="p-1 h-full">
+                        <CarouselItem key={i} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                            <div className="h-full p-1">
                                 <div className="testimonial-chip group relative cursor-pointer transition-transform duration-300 h-full">
-                                    <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-lg group-hover:bg-primary/30 transition-all duration-300"></div>
+                                    <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-md group-hover:bg-primary/30 transition-all duration-300"></div>
                                     <Card className="relative bg-card/60 backdrop-blur-sm border-primary/30 group-hover:border-primary/60 transition-all duration-300 h-full flex flex-col">
                                         <CardHeader>
                                           <CardTitle className="text-primary text-lg font-headline">{t.title}</CardTitle>

@@ -62,7 +62,7 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
-    const sectionClasses = "relative flex flex-col items-center justify-center py-16 px-0 bg-background overflow-hidden";
+    const sectionClasses = "relative flex flex-col items-center justify-center py-16 px-0 bg-background";
 
     return (
         <section id="testimonials" className={sectionClasses}>

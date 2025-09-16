@@ -26,7 +26,7 @@ export const HeroSection = () => {
         Nosotros Analizamos,<br></br> Tú Ganas.
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/80">
-        Recibe nuestras señales de Baccarat en tiempo real y empieza a ganar desde hoy.
+        Recibe nuestras señales de Baccarat en nuestros directos y empieza a ganar desde hoy.
         </p>
         <div className="mt-12">
             <a href="https://t.me/+AbrdLUEQ-9JmZjFk" target="_blank" rel="noopener noreferrer">

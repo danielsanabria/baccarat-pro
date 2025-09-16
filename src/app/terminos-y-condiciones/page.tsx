@@ -16,12 +16,12 @@ const TermsAndConditionsPage = () => {
                     
                     <h2 className="text-2xl font-headline text-primary pt-4">1. Aceptación de los Términos</h2>
                     <p>
-                        Al acceder y utilizar el sitio web "El tapete de Hero" (en adelante, "el Sitio"), usted acepta y se compromete a cumplir con estos Términos y Condiciones. Si no está de acuerdo con alguna parte de los términos, no podrá utilizar nuestro servicio.
+                        Al acceder y utilizar el sitio web "El tapete de Hero" (en adelante, "el Sitio") y unirte a nuestros canales de comunicación, usted acepta y se compromete a cumplir con estos Términos y Condiciones. Si no está de acuerdo con alguna parte de los términos, no podrá utilizar nuestro servicio.
                     </p>
 
                     <h2 className="text-2xl font-headline text-primary pt-4">2. Descripción del Servicio</h2>
                     <p>
-                        El Sitio proporciona señales y estrategias para el juego de Baccarat con fines informativos y de entretenimiento. No somos un operador de casino ni proporcionamos servicios de juego con dinero real. Los enlaces a casinos de terceros son enlaces de afiliados.
+                        El Sitio proporciona señales y estrategias para el juego de Baccarat con fines informativos y de entretenimiento a través de sesiones en directo en Google Meet. No somos un operador de casino ni proporcionamos servicios de juego con dinero real. 
                     </p>
 
                     <h2 className="text-2xl font-headline text-primary pt-4">3. Juego Responsable</h2>
@@ -31,7 +31,7 @@ const TermsAndConditionsPage = () => {
 
                     <h2 className="text-2xl font-headline text-primary pt-4">4. Exención de Responsabilidad de Garantías</h2>
                     <p>
-                        El uso del Sitio es bajo su propio riesgo. El servicio se proporciona "TAL CUAL" y "SEGÚN DISPONIBILIDAD". No garantizamos que los resultados que se puedan obtener del uso del servicio sean precisos o fiables. No garantizamos ganancias y no nos hacemos responsables de las pérdidas que puedan derivarse del uso de la información proporcionada en el Sitio o en nuestros canales de comunicación.
+                        El uso del Sitio y de nuestro servicio es bajo su propio riesgo. El servicio se proporciona "TAL CUAL" y "SEGÚN DISPONIBILIDAD". No garantizamos que los resultados que se puedan obtener del uso del servicio sean precisos o fiables. No garantizamos ganancias y no nos hacemos responsables de las pérdidas que puedan derivarse del uso de la información proporcionada en el Sitio o en nuestros canales de comunicación.
                     </p>
 
                     <h2 className="text-2xl font-headline text-primary pt-4">5. Propiedad Intelectual</h2>
@@ -46,7 +46,7 @@ const TermsAndConditionsPage = () => {
 
                     <h2 className="text-2xl font-headline text-primary pt-4">7. Cambios en los Términos</h2>
                     <p>
-                        Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en any momento. Le notificaremos cualquier cambio publicando los nuevos Términos y Condiciones en esta página.
+                        Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Le notificaremos cualquier cambio publicando los nuevos Términos y Condiciones en esta página.
                     </p>
 
                      <h2 className="text-2xl font-headline text-primary pt-4">Contacto</h2>

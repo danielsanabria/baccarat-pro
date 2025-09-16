@@ -84,7 +84,7 @@ export const TestimonialsSection = () => {
                 <CarouselContent>
                     {testimonials.map((t, i) => (
                         <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
-                            <div className="p-1">
+                            <div className="p-1 h-full">
                                 <div className="testimonial-chip group relative cursor-pointer transition-transform duration-300 h-full">
                                     <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-lg group-hover:bg-primary/30 transition-all duration-300"></div>
                                     <Card className="relative bg-card/60 backdrop-blur-sm border-primary/30 group-hover:border-primary/60 transition-all duration-300 h-full flex flex-col">
@@ -94,7 +94,7 @@ export const TestimonialsSection = () => {
                                         </CardHeader>
                                         <CardContent className="flex-grow flex flex-col justify-between">
                                           <p className="text-white/80 italic mb-4">"{t.quote}"</p>
-                                          <p className="text-right font-bold text-white/90">{t.author}</p>
+                                          <p className="text-right font-bold text-white/90 mt-auto">{t.author}</p>
                                         </CardContent>
                                     </Card>
                                 </div>

@@ -9,38 +9,31 @@ const plans = [
     {
         name: 'Gratis',
         price: '0€',
-        description: 'Acceso completo y gratuito a nuestras sesiones en directo.',
+        description: 'Acceso a las sesiones en directo y a nuestra comunidad. ¡Activa las notificaciones de Telegram para no perderte nada!',
         features: [
             { text: 'Señales en directo por Google Meet', included: true },
-            { text: 'Análisis con nuestro bot de alta precisión', included: true },
             { text: 'Acceso a la comunidad de Telegram', included: true },
+            { text: 'Análisis de nuestro bot de alta precisión', included: true },
             { text: 'Guía de estrategia Martingala', included: true },
-            { text: 'Soporte para configuración de mesas', included: true },
-            { text: 'Activa las notificaciones para no perderte los directos', included: true },
-
-
+            { text: 'Soporte para principiantes', included: true },
         ],
         cta: 'Únete Gratis',
-        highlight: false,
+        highlight: true,
         link: "https://t.me/+AbrdLUEQ-9JmZjFk",
         disabled: false
     },
     {
         name: 'Premium',
-        price: '-- €', // Ocultamos el precio
-        description: 'Desbloquea todas las herramientas para maximizar tus ganancias.',
+        price: '-- €',
+        description: 'Estamos trabajando en un servicio más exclusivo. ¡Próximamente disponible!',
         features: [
-            { text: 'Acceso a estrategia Martingala', included: true },
-            { text: 'Acceso a la comunidad', included: true },
-            { text: 'Guía de configuración de mesas', included: true },
-            { text: 'Guía de configuración de VPN', included: true },
-            { text: '3 Señales de apuestas diarias', included: true },
-            { text: '5 señales de apuestas VIP', included: true },
-            { text: 'Soporte Prioritario', included: true },
-
+            { text: 'Todo lo del plan gratuito', included: true },
+            { text: 'Más señales de apuestas VIP', included: false },
+            { text: 'Acceso 24/7 al bot de análisis', included: false },
+            { text: 'Soporte Prioritario 1 a 1', included: false },
         ],
         cta: 'Próximamente',
-        highlight: true,
+        highlight: false,
         disabled: true
     },
 ];
@@ -49,8 +42,8 @@ const Feature = ({ text, included }: { text: string, included: boolean }) => (
     <li className="flex items-center gap-3">
         {included 
             ? <Check className="w-5 h-5 text-green-500" /> 
-            : <X className="w-5 h-5 text-red-500" />}
-        <span className={included ? 'text-white/90' : 'text-white/50'}>{text}</span>
+            : <X className="w-5 h-5 text-white/30" />}
+        <span className={included ? 'text-white/90' : 'text-white/50 line-through'}>{text}</span>
     </li>
 );
 
@@ -59,9 +52,9 @@ export const PricingSection = () => {
         <section id="plans" className="py-16 px-4 bg-background">
             <div className="container mx-auto text-center">
                 <h2 className="font-headline text-4xl md:text-5xl text-white mb-4" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Elige tu Plan</h2>
-                <p className="text-white/70 max-w-2xl mx-auto mb-12">De momento, solo existe un plan: el ganador. Y es gratis para todos.</p>
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto items-start md:max-w-md">
-                    {plans.filter(p => p.name === 'Gratis').map((plan) => (
+                <p className="text-white/70 max-w-2xl mx-auto mb-12">Empieza gratis y únete a una comunidad de ganadores. Sin compromisos, solo oportunidades.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
+                    {plans.map((plan) => (
                         <Card key={plan.name} className={`flex flex-col bg-card/60 backdrop-blur-sm border-primary/30 transition-all duration-300 ${plan.highlight ? 'border-primary shadow-[0_0_25px_hsl(var(--primary)/0.4)] md:scale-105' : 'hover:border-primary/60 hover:-translate-y-2'}`}>
                             <CardHeader className="text-left">
                                 <CardTitle className="font-headline text-3xl text-primary">{plan.name}</CardTitle>
@@ -86,25 +79,6 @@ export const PricingSection = () => {
                             </CardFooter>
                         </Card>
                     ))}
-                    {/*
-                     <Card className={`flex flex-col bg-card/60 backdrop-blur-sm border-primary/30 transition-all duration-300 border-primary shadow-[0_0_25px_hsl(var(--primary)/0.4)] md:scale-105`}>
-                            <CardHeader className="text-left">
-                                <CardTitle className="font-headline text-3xl text-primary">Premium</CardTitle>
-                                <CardDescription className="text-white/60">Desbloquea todas las herramientas para maximizar tus ganancias.</CardDescription>
-                            </CardHeader>
-                            <CardContent className="flex-grow text-left">
-                               <div className="h-[56px] mb-6 flex items-center"><p className="text-4xl font-bold text-white">-- €<span className="text-lg font-normal text-white/50">/mes</span></p></div>
-                                <ul className="space-y-4">
-                                    {plans.find(p => p.name === 'Premium')?.features.map(feature => <Feature key={feature.text} {...feature} />)}
-                                </ul>
-                            </CardContent>
-                            <CardFooter>
-                                <Button size="lg" className={`w-full font-bold bg-primary text-primary-foreground hover:bg-amber-500`} variant={'default'} disabled={true}>
-                                    <span>Próximamente</span>
-                                </Button>
-                            </CardFooter>
-                        </Card>
-                    */}
                 </div>
             </div>
         </section>

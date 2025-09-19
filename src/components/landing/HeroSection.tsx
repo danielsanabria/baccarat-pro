@@ -23,10 +23,10 @@ export const HeroSection = () => {
 
       <div className="hero-text text-center relative z-10 flex flex-col items-center">
         <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold" style={{ textShadow: '0 0 15px hsl(var(--primary) / 0.7)' }}>
-        Nosotros Analizamos,<br></br> Tú Ganas.
+          La Estrategia Definitiva para Ganar al Baccarat
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/80">
-        Recibe nuestras señales de Baccarat en nuestros directos y empieza a ganar desde hoy.
+          Únete a nuestra comunidad de Telegram y recibe las señales en nuestros directos. Empieza a ganar desde hoy.
         </p>
         <div className="mt-12">
             <a href="https://t.me/+AbrdLUEQ-9JmZjFk" target="_blank" rel="noopener noreferrer">

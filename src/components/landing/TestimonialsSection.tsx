@@ -12,52 +12,52 @@ import Autoplay from "embla-carousel-autoplay"
 
 const testimonials = [
     { 
-        title: '¡Es como magia!',
+        title: '¡No me lo creía!',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Entré a la llamada de Google Meet sin saber qué esperar. El analista fue súper claro, nos dijo exactamente cuándo y dónde apostar. Gané en las primeras tres rondas. ¡No me lo creía!',
-        author: '— Carlos G., Madrid' 
+        quote: 'Entré al canal de Telegram por curiosidad. En la primera llamada de Google Meet, seguí las instrucciones y... ¡boom! Primera ganancia. El bot que usan es una locura.',
+        author: '— Javier M., Valencia' 
     },
     { 
-        title: 'Disciplina y ganancias',
+        title: 'De cero a entender el juego',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Siempre perdía por impulsivo. Aquí es diferente. El bot te da la señal y tú solo la sigues. Te enseñan a gestionar el bankroll y a no dejarte llevar. Por fin estoy viendo beneficios constantes.',
-        author: '— Sofía L., Buenos Aires'
+        quote: 'El Baccarat me parecía súper complicado. Aquí te lo explican todo en directo. No solo he ganado dinero, sino que ahora entiendo por qué hacemos cada apuesta.',
+        author: '— Lucía F., Sevilla'
     },
     { 
-        title: 'La comunidad es lo mejor',
+        title: 'La paciencia paga (y mucho)',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Estar en la llamada con más gente es genial. Celebramos las victorias juntos. Se siente como un equipo. Ya no es el juego solitario y frustrante de antes. ¡Recomendadísimo!',
-        author: '— Miguel A., Lima'
+        quote: 'Lo mejor es que no fuerzan las apuestas. Esperan el momento exacto que el bot indica. Ayer tuvimos una racha increíble en el directo. Se siente como un equipo.',
+        author: '— Alejandro R., Madrid'
     },
     { 
-        title: 'Cero estrés, solo seguir la señal',
+        title: 'Pensé que era otra estafa más',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Odio tener que analizar mil cosas. Con el canal de Telegram, me llega la notificación, me uno al Meet y sigo las instrucciones. Es el sistema perfecto para alguien que solo quiere ganar sin complicaciones.',
-        author: '— Valentina M., Santiago'
+        quote: 'Gratis, señales en directo... olía raro. Pero llevo dos semanas y mi bankroll ha crecido un 30%. La clave es ser disciplinado y seguir la estrategia Martingala como dicen.',
+        author: '— Sofía G., Barcelona'
     },
     {
-        title: 'De escéptico a creyente',
+        title: '¡Adiós a apostar a ciegas!',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Pensé que era otra estafa. Pero como era gratis, probé. La tasa de acierto del bot es real. Fallamos una, y a la siguiente la recuperamos con creces. Esto es pura estadística, no suerte.',
-        author: '— Alejandro P., Barcelona'
+        quote: 'Antes tiraba el dinero. Ahora solo entro cuando llega la notificación de Telegram. Unirme a la llamada y ganar con gente que sabe es otro nivel. 100% recomendado.',
+        author: '— Carlos V., Bilbao'
     },
     {
-        title: 'Perfecto para mi horario',
+        title: 'Fácil y desde el móvil',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Trabajo todo el día, pero siempre aviso cuando hay directo. Me uno desde el móvil, sigo la jugada y listo. He ganado más en un par de sesiones que en meses jugando por mi cuenta. ¡Gracias!',
-        author: '— Isabella C., Ciudad de México'
+        quote: 'Me uno a las llamadas de Meet desde donde sea. Ver la notificación, entrar al directo y seguir la jugada es súper simple. Me ha ahorrado horas y dinero.',
+        author: '— María P., Málaga'
     },
     {
-        title: 'Aprendiendo a jugar con cabeza',
+        title: 'Una comunidad de verdad',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'No solo te dan las señales, también explican por qué se entra en ese momento. He aprendido más sobre gestión de riesgo aquí que en cualquier otro lugar. Ahora juego mucho más tranquilo.',
-        author: '— Mateo R., Bogotá'
+        quote: 'Cuando se gana, lo celebramos todos en el chat de Telegram. Hay muy buen rollo. Es mucho más divertido que jugar solo contra el casino y encima, ¡ganando!',
+        author: '— David S., Zaragoza'
     },
     {
-        title: '¡Resultados desde el primer día!',
+        title: 'Resultados consistentes',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Me uní, entré al directo de esa misma noche y dupliqué mi inversión inicial en menos de una hora. Estaba flipando. Si estás dudando, no lo hagas. Entra y compruébalo tú mismo.',
-        author: '— Luciana V., Valencia'
+        quote: 'Lo que me convenció es la consistencia. No ganas todas, obviamente, pero aplicando la gestión de riesgo que enseñan, el balance a final de semana es siempre positivo.',
+        author: '— Elena N., Murcia'
     }
 ];
 

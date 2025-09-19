@@ -4,12 +4,12 @@ import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const faqItems = [
-  { question: '¿Qué es Baccarat Pro y cómo funciona?', answer: 'Baccarat Pro es un canal de Telegram donde compartimos señales de apuestas para Baccarat. Utilizamos un sistema de análisis para identificar las mejores oportunidades y te las enviamos en tiempo real para que puedas apostar con ventaja.' },
-  { question: '¿Necesito experiencia previa en Baccarat?', answer: 'No, en absoluto. Nuestras señales son claras y fáciles de seguir. Te decimos exactamente dónde y cuándo apostar. Es ideal tanto para principiantes como para jugadores experimentados que quieren optimizar sus ganancias.' },
-  { question: '¿Es un servicio de pago? ¿Hay costes ocultos?', answer: 'Actualmente, el acceso a nuestro canal de señales es completamente gratuito. Podríamos ofrecer planes premium en el futuro, pero siempre seremos transparentes con los costes. No hay trucos ni cargos ocultos.' },
-  { question: '¿Qué estrategia de apuestas recomiendan?', answer: 'Promovemos el uso de la estrategia Martingala para la gestión de tu bankroll. Nuestras señales están diseñadas para funcionar de manera óptima con este sistema, ayudándote a recuperar pérdidas y asegurar ganancias.' },
-  { question: '¿Garantizan que voy a ganar dinero?', answer: 'El juego siempre conlleva un riesgo y no podemos garantizar legalmente las ganancias. Sin embargo, nuestro sistema está diseñado para maximizar tus probabilidades de éxito a largo plazo, basándose en análisis estadísticos y no en la suerte.' },
-  { question: '¿En qué casinos puedo usar las señales?', answer: 'Nuestras señales son aplicables a la mayoría de las mesas de Baccarat online. En la sección "Nuestros Casinos" recomendamos algunos operadores donde nuestra estrategia ha sido probada y funciona bien.' },
+  { question: '¿Cómo funciona exactamente el servicio?', answer: 'Te unes a nuestro canal de Telegram gratuito. Cuando nuestro bot, con una alta tasa de acierto, detecta una oportunidad de apuesta basada en estadística, te avisamos para que te unas a un directo en Google Meet. Ahí, operamos juntos en tiempo real.' },
+  { question: '¿Necesito experiencia previa en Baccarat?', answer: 'No, en absoluto. Durante el directo te guiaremos sobre cómo y dónde apostar. Es ideal tanto para principiantes como para jugadores que quieren un sistema que minimice el riesgo.' },
+  { question: '¿Es un servicio de pago? ¿Hay costes ocultos?', answer: 'Actualmente, el acceso a nuestro canal de Telegram y a las sesiones en directo es completamente gratuito. No hay trucos ni cargos ocultos. Solo pedimos que actives las notificaciones para no perderte ningún directo.' },
+  { question: '¿Qué estrategia de apuestas recomiendan?', answer: 'Promovemos el uso de la estrategia Martingala para la gestión de tu capital. Nuestro bot está diseñado para encontrar los momentos de entrada óptimos que se alinean perfectamente con este sistema, ayudándote a recuperar pérdidas y asegurar ganancias.' },
+  { question: '¿Garantizan que voy a ganar dinero?', answer: 'El juego siempre conlleva un riesgo y no podemos garantizar legalmente las ganancias. Sin embargo, nuestro sistema está diseñado para maximizar tus probabilidades de éxito a largo plazo, basándose en un análisis estadístico avanzado, no en la suerte.' },
+  { question: 'Si no hay señales, ¿cómo sé cuándo apostar?', answer: 'Esa es la clave de nuestro sistema. Solo apostamos cuando las probabilidades están a nuestro favor. Recibirás una notificación en Telegram con el enlace a Google Meet solo cuando nuestro bot confirme una entrada de alta probabilidad. ¡Paciencia y disciplina son la clave!' },
 ];
   
 

@@ -9,38 +9,31 @@ const plans = [
     {
         name: 'Gratis',
         price: '0€',
-        description: 'Acceso completo a nuestra comunidad y señales en Telegram.',
+        description: 'Acceso a las sesiones en directo y a nuestra comunidad. ¡Activa las notificaciones de Telegram para no perderte nada!',
         features: [
-            { text: 'Señales de Baccarat en tiempo real', included: true },
+            { text: 'Señales en directo por Google Meet', included: true },
             { text: 'Acceso a la comunidad de Telegram', included: true },
+            { text: 'Análisis de nuestro bot de alta precisión', included: true },
             { text: 'Guía de estrategia Martingala', included: true },
             { text: 'Soporte para principiantes', included: true },
-            { text: 'Análisis de mercado por nuestro bot', included: true },
-            { text: 'Recomendaciones de casinos', included: true },
-
-
         ],
         cta: 'Únete Gratis',
-        highlight: false,
+        highlight: true,
         link: "https://t.me/+AbrdLUEQ-9JmZjFk",
         disabled: false
     },
     {
         name: 'Premium',
-        price: '-- €', // Ocultamos el precio
-        description: 'Desbloquea todas las herramientas para maximizar tus ganancias.',
+        price: '-- €',
+        description: 'Estamos trabajando en un servicio más exclusivo. ¡Próximamente disponible!',
         features: [
-            { text: 'Acceso a estrategia Martingala', included: true },
-            { text: 'Acceso a la comunidad', included: true },
-            { text: 'Guía de configuración de mesas', included: true },
-            { text: 'Guía de configuración de VPN', included: true },
-            { text: '3 Señales de apuestas diarias', included: true },
-            { text: '5 señales de apuestas VIP', included: true },
-            { text: 'Soporte Prioritario', included: true },
-
+            { text: 'Todo lo del plan gratuito', included: true },
+            { text: 'Más señales de apuestas VIP', included: false },
+            { text: 'Acceso 24/7 al bot de análisis', included: false },
+            { text: 'Soporte Prioritario 1 a 1', included: false },
         ],
         cta: 'Próximamente',
-        highlight: true,
+        highlight: false,
         disabled: true
     },
 ];
@@ -49,8 +42,8 @@ const Feature = ({ text, included }: { text: string, included: boolean }) => (
     <li className="flex items-center gap-3">
         {included 
             ? <Check className="w-5 h-5 text-green-500" /> 
-            : <X className="w-5 h-5 text-red-500" />}
-        <span className={included ? 'text-white/90' : 'text-white/50'}>{text}</span>
+            : <X className="w-5 h-5 text-white/30" />}
+        <span className={included ? 'text-white/90' : 'text-white/50 line-through'}>{text}</span>
     </li>
 );
 

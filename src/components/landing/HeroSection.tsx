@@ -26,7 +26,7 @@ export const HeroSection = () => {
           La Estrategia Definitiva para Ganar al Baccarat
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/80">
-          Únete a nuestra comunidad de Telegram y recibe señales de Baccarat en tiempo real. Empieza a ganar desde hoy.
+          Únete a nuestra comunidad de Telegram y recibe las señales en nuestros directos. Empieza a ganar desde hoy.
         </p>
         <div className="mt-12">
             <a href="https://t.me/+AbrdLUEQ-9JmZjFk" target="_blank" rel="noopener noreferrer">

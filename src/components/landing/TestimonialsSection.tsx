@@ -12,40 +12,52 @@ import Autoplay from "embla-carousel-autoplay"
 
 const testimonials = [
     { 
-        title: '¡Resultados desde el día 1!',
+        title: '¡No me lo creía!',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Me uní al Telegram, seguí la primera señal que mandaron y gané. Así de simple. Es increíble tener a alguien que haga el trabajo duro de analizar por ti.',
+        quote: 'Entré al canal de Telegram por curiosidad. En la primera llamada de Google Meet, seguí las instrucciones y... ¡boom! Primera ganancia. El bot que usan es una locura.',
         author: '— Javier M., Valencia' 
     },
     { 
-        title: 'Por fin entiendo el juego',
+        title: 'De cero a entender el juego',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Siempre me había intimidado el Baccarat. Con las señales y las guías que comparten, no solo estoy ganando, sino que estoy aprendiendo a jugar con cabeza. ¡Gracias!',
+        quote: 'El Baccarat me parecía súper complicado. Aquí te lo explican todo en directo. No solo he ganado dinero, sino que ahora entiendo por qué hacemos cada apuesta.',
         author: '— Lucía F., Sevilla'
     },
     { 
-        title: 'La mejor comunidad',
+        title: 'La paciencia paga (y mucho)',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Lo que más me gusta es el ambiente en el grupo de Telegram. Todos compartimos las victorias y nos animamos. Se siente como un equipo, no como que juegas solo contra el casino.',
+        quote: 'Lo mejor es que no fuerzan las apuestas. Esperan el momento exacto que el bot indica. Ayer tuvimos una racha increíble en el directo. Se siente como un equipo.',
         author: '— Alejandro R., Madrid'
     },
     { 
-        title: 'De escéptico a creyente',
+        title: 'Pensé que era otra estafa más',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Pensé que era otra estafa más, pero como era gratis, probé. La tasa de acierto es real. Llevo dos semanas con ganancias consistentes siguiendo la estrategia al pie de la letra.',
+        quote: 'Gratis, señales en directo... olía raro. Pero llevo dos semanas y mi bankroll ha crecido un 30%. La clave es ser disciplinado y seguir la estrategia Martingala como dicen.',
         author: '— Sofía G., Barcelona'
     },
     {
-        title: 'Disciplina y paciencia',
+        title: '¡Adiós a apostar a ciegas!',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'El sistema me ha enseñado a ser paciente y a no apostar por impulso. Solo entro cuando llega una señal. Mis números han mejorado drásticamente. 100% recomendado.',
+        quote: 'Antes tiraba el dinero. Ahora solo entro cuando llega la notificación de Telegram. Unirme a la llamada y ganar con gente que sabe es otro nivel. 100% recomendado.',
         author: '— Carlos V., Bilbao'
     },
     {
-        title: '¡Fácil y efectivo!',
+        title: 'Fácil y desde el móvil',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Recibir una notificación en el móvil y saber que es una buena oportunidad para apostar no tiene precio. Me ahorra horas de mirar patrones. ¡Un servicio de 10!',
+        quote: 'Me uno a las llamadas de Meet desde donde sea. Ver la notificación, entrar al directo y seguir la jugada es súper simple. Me ha ahorrado horas y dinero.',
         author: '— María P., Málaga'
+    },
+    {
+        title: 'Una comunidad de verdad',
+        rating: '⭐⭐⭐⭐⭐',
+        quote: 'Cuando se gana, lo celebramos todos en el chat de Telegram. Hay muy buen rollo. Es mucho más divertido que jugar solo contra el casino y encima, ¡ganando!',
+        author: '— David S., Zaragoza'
+    },
+    {
+        title: 'Resultados consistentes',
+        rating: '⭐⭐⭐⭐⭐',
+        quote: 'Lo que me convenció es la consistencia. No ganas todas, obviamente, pero aplicando la gestión de riesgo que enseñan, el balance a final de semana es siempre positivo.',
+        author: '— Elena N., Murcia'
     }
 ];
 

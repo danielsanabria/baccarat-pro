@@ -11,6 +11,7 @@ import Image from 'next/image';
 const NavLinks = () => (
     <>
         <a href="/#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
+        <a href="/#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
         <a href="/#plans" className="hover:text-primary transition-colors block py-2">Planes</a>
         <a href="/#testimonials" className="hover:text-primary transition-colors block py-2">Opiniones</a>
         <a href="/#calculator" className="hover:text-primary transition-colors block py-2">Calculadora</a>
@@ -57,6 +58,9 @@ export const BottomNav = () => {
                                 <div className="grid gap-4 py-4 text-center text-lg">
                                     <SheetClose asChild>
                                         <a href="/#strategy" className="hover:text-primary transition-colors block py-2">Estrategia</a>
+                                    </SheetClose>
+                                    <SheetClose asChild>
+                                        <a href="/#affiliates" className="hover:text-primary transition-colors block py-2">Casinos</a>
                                     </SheetClose>
                                     <SheetClose asChild>
                                         <a href="/#plans" className="hover:text-primary transition-colors block py-2">Planes</a>

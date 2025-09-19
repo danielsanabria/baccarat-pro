@@ -12,52 +12,40 @@ import Autoplay from "embla-carousel-autoplay"
 
 const testimonials = [
     { 
-        title: '¡Es como magia!',
+        title: '¡Resultados desde el día 1!',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Entré a la llamada de Google Meet sin saber qué esperar. El analista fue súper claro, nos dijo exactamente cuándo y dónde apostar. Gané en las primeras tres rondas. ¡No me lo creía!',
-        author: '— Carlos G., Madrid' 
+        quote: 'Me uní al Telegram, seguí la primera señal que mandaron y gané. Así de simple. Es increíble tener a alguien que haga el trabajo duro de analizar por ti.',
+        author: '— Javier M., Valencia' 
     },
     { 
-        title: 'Disciplina y ganancias',
+        title: 'Por fin entiendo el juego',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Siempre perdía por impulsivo. Aquí es diferente. El bot te da la señal y tú solo la sigues. Te enseñan a gestionar el bankroll y a no dejarte llevar. Por fin estoy viendo beneficios constantes.',
-        author: '— Sofía L., Buenos Aires'
+        quote: 'Siempre me había intimidado el Baccarat. Con las señales y las guías que comparten, no solo estoy ganando, sino que estoy aprendiendo a jugar con cabeza. ¡Gracias!',
+        author: '— Lucía F., Sevilla'
     },
     { 
-        title: 'La comunidad es lo mejor',
+        title: 'La mejor comunidad',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Estar en la llamada con más gente es genial. Celebramos las victorias juntos. Se siente como un equipo. Ya no es el juego solitario y frustrante de antes. ¡Recomendadísimo!',
-        author: '— Miguel A., Lima'
+        quote: 'Lo que más me gusta es el ambiente en el grupo de Telegram. Todos compartimos las victorias y nos animamos. Se siente como un equipo, no como que juegas solo contra el casino.',
+        author: '— Alejandro R., Madrid'
     },
     { 
-        title: 'Cero estrés, solo seguir la señal',
-        rating: '⭐⭐⭐⭐⭐',
-        quote: 'Odio tener que analizar mil cosas. Con el canal de Telegram, me llega la notificación, me uno al Meet y sigo las instrucciones. Es el sistema perfecto para alguien que solo quiere ganar sin complicaciones.',
-        author: '— Valentina M., Santiago'
-    },
-    {
         title: 'De escéptico a creyente',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Pensé que era otra estafa. Pero como era gratis, probé. La tasa de acierto del bot es real. Fallamos una, y a la siguiente la recuperamos con creces. Esto es pura estadística, no suerte.',
-        author: '— Alejandro P., Barcelona'
+        quote: 'Pensé que era otra estafa más, pero como era gratis, probé. La tasa de acierto es real. Llevo dos semanas con ganancias consistentes siguiendo la estrategia al pie de la letra.',
+        author: '— Sofía G., Barcelona'
     },
     {
-        title: 'Perfecto para mi horario',
+        title: 'Disciplina y paciencia',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'Trabajo todo el día, pero siempre aviso cuando hay directo. Me uno desde el móvil, sigo la jugada y listo. He ganado más en un par de sesiones que en meses jugando por mi cuenta. ¡Gracias!',
-        author: '— Isabella C., Ciudad de México'
+        quote: 'El sistema me ha enseñado a ser paciente y a no apostar por impulso. Solo entro cuando llega una señal. Mis números han mejorado drásticamente. 100% recomendado.',
+        author: '— Carlos V., Bilbao'
     },
     {
-        title: 'Aprendiendo a jugar con cabeza',
+        title: '¡Fácil y efectivo!',
         rating: '⭐⭐⭐⭐⭐',
-        quote: 'No solo te dan las señales, también explican por qué se entra en ese momento. He aprendido más sobre gestión de riesgo aquí que en cualquier otro lugar. Ahora juego mucho más tranquilo.',
-        author: '— Mateo R., Bogotá'
-    },
-    {
-        title: '¡Resultados desde el primer día!',
-        rating: '⭐⭐⭐⭐⭐',
-        quote: 'Me uní, entré al directo de esa misma noche y dupliqué mi inversión inicial en menos de una hora. Estaba flipando. Si estás dudando, no lo hagas. Entra y compruébalo tú mismo.',
-        author: '— Luciana V., Valencia'
+        quote: 'Recibir una notificación en el móvil y saber que es una buena oportunidad para apostar no tiene precio. Me ahorra horas de mirar patrones. ¡Un servicio de 10!',
+        author: '— María P., Málaga'
     }
 ];
 

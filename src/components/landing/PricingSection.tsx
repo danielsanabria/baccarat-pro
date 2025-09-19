@@ -3,7 +3,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
-import { Check, X } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 const plans = [
     {
@@ -22,28 +22,14 @@ const plans = [
         link: "https://t.me/+AbrdLUEQ-9JmZjFk",
         disabled: false
     },
-    {
-        name: 'Premium',
-        price: '-- €',
-        description: 'Estamos trabajando en un servicio más exclusivo. ¡Próximamente disponible!',
-        features: [
-            { text: 'Todo lo del plan gratuito', included: true },
-            { text: 'Más señales de apuestas VIP', included: false },
-            { text: 'Acceso 24/7 al bot de análisis', included: false },
-            { text: 'Soporte Prioritario 1 a 1', included: false },
-        ],
-        cta: 'Próximamente',
-        highlight: false,
-        disabled: true
-    },
 ];
 
 const Feature = ({ text, included }: { text: string, included: boolean }) => (
     <li className="flex items-center gap-3">
         {included 
             ? <Check className="w-5 h-5 text-green-500" /> 
-            : <X className="w-5 h-5 text-white/30" />}
-        <span className={included ? 'text-white/90' : 'text-white/50 line-through'}>{text}</span>
+            : <Check className="w-5 h-5 text-white/30" />}
+        <span className={included ? 'text-white/90' : 'text-white/50'}>{text}</span>
     </li>
 );
 
@@ -53,9 +39,9 @@ export const PricingSection = () => {
             <div className="container mx-auto text-center">
                 <h2 className="font-headline text-4xl md:text-5xl text-white mb-4" style={{ textShadow: '0 0 10px hsl(var(--primary) / 0.5)' }}>Elige tu Plan</h2>
                 <p className="text-white/70 max-w-2xl mx-auto mb-12">Empieza gratis y únete a una comunidad de ganadores. Sin compromisos, solo oportunidades.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
+                <div className="flex justify-center">
                     {plans.map((plan) => (
-                        <Card key={plan.name} className={`flex flex-col bg-card/60 backdrop-blur-sm border-primary/30 transition-all duration-300 ${plan.highlight ? 'border-primary shadow-[0_0_25px_hsl(var(--primary)/0.4)] md:scale-105' : 'hover:border-primary/60 hover:-translate-y-2'}`}>
+                        <Card key={plan.name} className={`flex flex-col bg-card/60 backdrop-blur-sm border-primary/30 transition-all duration-300 w-full max-w-md ${plan.highlight ? 'border-primary shadow-[0_0_25px_hsl(var(--primary)/0.4)]' : 'hover:border-primary/60 hover:-translate-y-2'}`}>
                             <CardHeader className="text-left">
                                 <CardTitle className="font-headline text-3xl text-primary">{plan.name}</CardTitle>
                                 <CardDescription className="text-white/60">{plan.description}</CardDescription>

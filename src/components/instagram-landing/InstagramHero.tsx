@@ -8,10 +8,16 @@ export const InstagramHero = () => {
     return (
         <>
             <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-transparent">
-                <div className="container mx-auto h-full flex items-center justify-center px-4">
-                    <a href="/#hero" className="flex items-center gap-2 font-headline text-xl text-primary hover:text-amber-300 transition-colors">
+                <div className="container mx-auto h-full flex items-center justify-between px-4">
+                    <div className="flex items-center gap-2 font-headline text-xl text-primary">
                         <Image src="https://iili.io/FbANuA7.png" alt="Baccarat Pro Logo" width={32} height={32} data-ai-hint="baccarat logo" />
                         <span>El tapete de Hero</span>
+                    </div>
+                     <a href="https://t.me/+AbrdLUEQ-9JmZjFk" target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" className="font-bold bg-primary text-primary-foreground hover:shadow-[0_0_15px_hsl(var(--primary)/0.5)] transition-all duration-300">
+                            ÚNETE
+                            <Send className="hidden sm:inline" />
+                        </Button>
                     </a>
                 </div>
             </header>

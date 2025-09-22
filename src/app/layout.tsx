@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="dark">
       <head>
-        <title>Baccarat Pro | Señales y Estrategias para Ganar en Telegram</title>
+        <title>El Tapete de Hero | Señales y Estrategias para Ganar en Telegram</title>
         <meta name="description" content="Únete a Baccarat Pro y recibe señales de apuestas en tiempo real en nuestro canal de Telegram. Aprende la estrategia definitiva para ganar en Baccarat y maximizar tus ganancias." />
         <meta name="keywords" content="baccarat, estrategia baccarat, ganar baccarat, señales baccarat, telegram baccarat, apuestas online, casino online" />
         <meta name="google-site-verification" content="s20DPzaONOTfWQIAQxyvYn8zLX1zzzpgFr5pVTqhpik" />

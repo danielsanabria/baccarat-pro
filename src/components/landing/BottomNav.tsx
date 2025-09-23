@@ -36,7 +36,7 @@ export const BottomNav = () => {
 
                 <div className="flex items-center gap-2">
                     <Button asChild className="bg-primary text-primary-foreground hover:bg-amber-500 transition-colors">
-                        <a href="https://t.me/+AbrdLUEQ-9JmZjFk" target="_blank" rel="noopener noreferrer">
+                        <a href="https://t.me/+CZfNR7kvm-Q3YjVk" target="_blank" rel="noopener noreferrer">
                             Telegram
                             <Send className="hidden sm:inline" />
                         </a>

@@ -19,7 +19,7 @@ const plans = [
         ],
         cta: 'Únete Gratis',
         highlight: true,
-        link: "https://t.me/+AbrdLUEQ-9JmZjFk",
+        link: "https://t.me/+CZfNR7kvm-Q3YjVk",
         disabled: false
     },
 ];

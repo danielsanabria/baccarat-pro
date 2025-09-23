@@ -13,7 +13,7 @@ export const InstagramHero = () => {
                         <Image src="https://iili.io/FbANuA7.png" alt="Baccarat Pro Logo" width={32} height={32} data-ai-hint="baccarat logo" />
                         <span>El tapete de Hero</span>
                     </div>
-                     <a href="https://t.me/+AbrdLUEQ-9JmZjFk" target="_blank" rel="noopener noreferrer">
+                     <a href="https://t.me/+CZfNR7kvm-Q3YjVk" target="_blank" rel="noopener noreferrer">
                         <Button size="sm" className="font-bold bg-primary text-primary-foreground hover:shadow-[0_0_15px_hsl(var(--primary)/0.5)] transition-all duration-300">
                             ÚNETE
                             <Send className="hidden sm:inline" />
@@ -63,7 +63,7 @@ export const InstagramHero = () => {
                     </ul>
 
                     <div className="mt-8">
-                        <a href="https://t.me/+AbrdLUEQ-9JmZjFk" target="_blank" rel="noopener noreferrer">
+                        <a href="https://t.me/+CZfNR7kvm-Q3YjVk" target="_blank" rel="noopener noreferrer">
                             <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary via-amber-500 to-primary text-primary-foreground hover:shadow-[0_0_25px_hsl(var(--primary)/0.6)] transition-all duration-300 scale-100 hover:scale-105 transform">
                                 ÚNETE A TELEGRAM
                                 <Send />
